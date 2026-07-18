@@ -1,0 +1,46 @@
+{
+  "id": "2459d431-4341-4324-9519-d9d2242a7892",
+  "name": "GMAS - Electronic Invoice for Ecuador",
+  "publisher": "GRUPOMAS",
+  "version": "1.0.0.97",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "2db2cd7b-5440-4a93-abf8-dfc9794a6c29",
+      "name": "GMAS - Localization for Ecuador",
+      "publisher": "GRUPOMAS",
+      "version": "1.0.0.0"
+    },
+    {
+      "id": "415bd932-5cca-4533-8292-88608e24288c",
+      "name": "GMAS - Tax",
+      "publisher": "GRUPOMAS",
+      "version": "1.0.0.0"
+    }
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "27.0.0.0",
+  "idRanges": [
+    {
+      "from": 70500,
+      "to": 70599
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": false
+  },
+  "runtime": "16.0",
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ]
+}

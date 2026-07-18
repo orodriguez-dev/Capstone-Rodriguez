@@ -1,0 +1,122 @@
+/// <summary>
+/// PageExtension EIE Posted Sales Invoices (ID 70501) extends Record Posted Sales Invoices.
+/// </summary>
+pageextension 70501 "EIE Posted Sales Invoices" extends "Posted Sales Invoices"
+{
+    layout
+    {
+        // Add changes to page layout here
+        addafter("GMAS SRI Authorization No.")
+        {
+
+            field("EIE Id. Transaction Api"; Rec."EIE Id. Transaction Api")
+            {
+                ApplicationArea = All;
+                ToolTip = 'Specifies the value of the Id. Transaction Api field.';
+            }
+        }
+    }
+
+    actions
+    {
+        // Add changes to page actions here
+        addafter("&Invoice")
+        {
+            group("EIE Electronic Invoicing")
+            {
+                Image = ElectronicDoc;
+                Caption = 'Electronic Invoicing';
+
+                action("EIE Send Electronic Document")
+                {
+                    Caption = 'Send Electronic Document';
+                    Image = SendTo;
+                    ApplicationArea = All;
+                    ToolTip = 'Send electronic document to the GRUPOMAS interface for authorization';
+
+                    trigger OnAction()
+                    var
+                        SalesInvoiceHeader: Record "Sales Invoice Header";
+                        ResponsibilityCenter: Record "Responsibility Center";
+                        GMASSRITabla20: Record "GMAS SRI Tabla 20";
+                        GMASSRITabla02: Record "GMAS SRI Tabla 02";
+                        EIEElectronicInvoicing: Codeunit "EIE Electronic Invoicing";
+                    begin
+                        CurrPage.SetSelectionFilter(SalesInvoiceHeader);
+                        SalesInvoiceHeader.SetFilter("GMAS EI Electronic Doc. Status", '%1|%2|%3|%4', Rec."GMAS EI Electronic Doc. Status"::" ",
+                                                                                                      Rec."GMAS EI Electronic Doc. Status"::Error,
+                                                                                                      Rec."GMAS EI Electronic Doc. Status"::"Not Authorized",
+                                                                                                      Rec."GMAS EI Electronic Doc. Status"::Returned);
+                        SalesInvoiceHeader.SetFilter("GMAS SRI Document Type Code", '<>%1', '');
+                        if SalesInvoiceHeader.FindSet() then
+                            repeat
+                                SalesInvoiceHeader.CalcFields("Amount Including VAT");
+                                ResponsibilityCenter.Get(SalesInvoiceHeader."Responsibility Center");
+                                GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
+                                if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                                    if (SalesInvoiceHeader."GMAS EI Electronic Doc. Status" <> Rec."GMAS EI Electronic Doc. Status"::Received) and (SalesInvoiceHeader."GMAS EI Electronic Doc. Status" <> Rec."GMAS EI Electronic Doc. Status"::Sent) then begin
+                                        GMASSRITabla02.Get(SalesInvoiceHeader."GMAS SRI Ident. Type Code");
+                                        if (GMASSRITabla02."EI Maximum Amount" = 0) or
+                                            ((SalesInvoiceHeader."Amount Including VAT" <= GMASSRITabla02."EI Maximum Amount") and (GMASSRITabla02."EI Maximum Amount" <> 0)) then
+                                            EIEElectronicInvoicing.AuthorizeSalesInvoiceDocument(SalesInvoiceHeader);
+                                    end;
+                            until SalesInvoiceHeader.Next() = 0;
+                        CurrPage.Update(false);
+                    end;
+                }
+
+                action("EIE Get Status Electronic Document")
+                {
+                    Caption = 'Get Status Electronic Document';
+                    Image = Status;
+                    ApplicationArea = All;
+                    ToolTip = 'Get status electronic document to the GRUPOMAS interface for authorization';
+
+                    trigger OnAction()
+                    var
+                        SalesInvoiceHeader: Record "Sales Invoice Header";
+                        ResponsibilityCenter: Record "Responsibility Center";
+                        GMASSRITabla20: Record "GMAS SRI Tabla 20";
+                        EIEElectronicInvoicing: Codeunit "EIE Electronic Invoicing";
+                    begin
+                        CurrPage.SetSelectionFilter(SalesInvoiceHeader);
+                        //SalesInvoiceHeader.SetFilter("GMAS EI Electronic Doc. Status", '<>%1', Rec."GMAS EI Electronic Doc. Status"::Authorized);
+                        SalesInvoiceHeader.SetFilter("EIE Id. Transaction Api", '<>%1', '');
+                        SalesInvoiceHeader.SetFilter("GMAS SRI Document Type Code", '<>%1', '');
+                        if SalesInvoiceHeader.FindSet() then
+                            repeat
+                                ResponsibilityCenter.Get(SalesInvoiceHeader."Responsibility Center");
+                                GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
+                                if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                                    EIEElectronicInvoicing.StatusSalesInvoiceDocument(SalesInvoiceHeader);
+                            until SalesInvoiceHeader.Next() = 0;
+                        CurrPage.Update(false);
+                    end;
+                }
+
+                action("EIE Download Electronic Document")
+                {
+                    Caption = 'Download Electronic Document';
+                    Image = Download;
+                    ApplicationArea = All;
+                    ToolTip = 'Download electronic document to the GRUPOMAS interface for authorization';
+
+                    trigger OnAction()
+                    var
+                        ResponsibilityCenter: Record "Responsibility Center";
+                        GMASSRITabla20: Record "GMAS SRI Tabla 20";
+                        EIEElectronicInvoicing: Codeunit "EIE Electronic Invoicing";
+                    begin
+                        if Rec."GMAS SRI Document Type Code" <> '' then begin
+                            ResponsibilityCenter.Get(Rec."Responsibility Center");
+                            GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
+                            if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                                EIEElectronicInvoicing.DownloadSalesInvoiceDocument(Rec);
+                            CurrPage.Update(false);
+                        end;
+                    end;
+                }
+            }
+        }
+    }
+}

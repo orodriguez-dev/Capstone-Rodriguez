@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Microsoft cloud sandbox",
+            "request": "launch",
+            "type": "al",
+            "tenant": "c7fbe2c5-1a5a-4adc-8570-15401988b0bb",//GRUPOMAS
+            //"tenant": "9caa575b-eb9d-46e9-a816-d410411ef188", //METROPARQUEOS
+            //"tenant": "bb5f4486-b5af-48da-abf0-c348f7f9885b", //BATERIAS
+            //"tenant": "eac830b8-8d29-4db4-b1bf-56fccbbb7d42", //BORREAL
+            "environmentType": "Sandbox",
+            "environmentName": "Demo",
+            //"environmentName": "Certification",
+            //"environmentName": "Sandbox",
+            //"environmentName": "Developer",
+            "breakOnError": "All",
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "schemaUpdateMode": "ForceSync"
+        }
+    ]
+}

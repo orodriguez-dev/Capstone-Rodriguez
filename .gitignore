@@ -1,0 +1,6 @@
+*.alpackages
+*.alcache
+*.snapshots
+*.altemplates
+*rad.json
+*.app

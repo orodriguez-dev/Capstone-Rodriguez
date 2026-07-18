@@ -1,0 +1,1053 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="es-MX" original="GMAS - Electronic Invoice for Ecuador">
+    <body>
+      <group id="body">
+        <trans-unit id="Codeunit 2609046002 - NamedType 2191129744" size-unit="char" translate="yes" xml:space="preserve">
+          <source>A parameter must be defined to select the module to be executed: "Ventas" or "Compras".</source>
+          <target>Se debe definir un parámetro para seleccionar el módulo a ejecutar: "Ventas" o "Compras".</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Electronic Inv. Get Status - NamedType ParameterErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3901021794 - NamedType 2191129744" size-unit="char" translate="yes" xml:space="preserve">
+          <source>A parameter must be defined to select the module to be executed: "Ventas" or "Compras".</source>
+          <target>Se debe definir un parámetro para seleccionar el módulo a ejecutar: "Ventas" o "Compras".</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Electronic Inv. Send Doc. - NamedType ParameterErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 211220069" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AND</source>
+          <target>Y</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType AndTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 2044933180" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BILLION</source>
+          <target>BILLONES</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType BillionsTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 3091253309" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BILLION</source>
+          <target>BILLÓN</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType BillionTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 662747891" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EIGHTEEN</source>
+          <target>DIECIOCHO</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType EighteenTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 641099349" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EIGHT HUNDRED</source>
+          <target>OCHOCIENTOS</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType EightHundredTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 1549395729" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EIGHT</source>
+          <target>OCHO</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType EightTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 268545468" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EIGHTY</source>
+          <target>OCHENTA</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType EigntyTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 3457427291" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ELEVEN</source>
+          <target>ONCE</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType ElevenTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 886851693" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FIFTEEN</source>
+          <target>QUINCE</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType FifteenTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 3834879600" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FIFTY</source>
+          <target>CINCUENTA</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType FiftyTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 2842807076" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FIVE HUNDRED</source>
+          <target>QUINIENTOS</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType FiveHundredTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 3807634184" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FIVE</source>
+          <target>CINCO</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType FiveTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 2692793330" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FORTY</source>
+          <target>CUARENTA</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType FortyTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 4075265902" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FOUR HUNDRED</source>
+          <target>CUATROCIENTOS</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType FourHundredTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 1130339792" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FOURTEEN</source>
+          <target>CATORCE</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType FourteenTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 3985749314" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FOUR</source>
+          <target>CUATRO</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType FourTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 4223027000" size-unit="char" translate="yes" xml:space="preserve">
+          <source>HUNDRED</source>
+          <target>CIEN</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType HundredTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 1618793145" size-unit="char" translate="yes" xml:space="preserve">
+          <source>MILLION</source>
+          <target>MILLONES</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType MillionsTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 3694210800" size-unit="char" translate="yes" xml:space="preserve">
+          <source>MILLION</source>
+          <target>MILLÓN</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType MillionTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 4250477412" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NINE HUNDRED</source>
+          <target>NOVECIENTOS</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType NineHundredTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 310382378" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NINETEEN</source>
+          <target>DIECINUEVE</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType NineteenTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 618728392" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NINE</source>
+          <target>NUEVE</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType NineTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 2570710131" size-unit="char" translate="yes" xml:space="preserve">
+          <source>NINETY</source>
+          <target>NOVENTA</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType NinetyTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 4110090559" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ONE</source>
+          <target>UN</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType OneATxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 3117714180" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ONE HUNDRED</source>
+          <target>CIENTO</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType OneHundredTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 57156200" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ONE</source>
+          <target>UNO</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType OneTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 2096730305" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 results in a written number that is too long.</source>
+          <target>%1 da como resultado un número escrito demasiado largo.</target>
+          <note from="Developer" annotates="general" priority="2">%1 = Result</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType ResultsErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 1965283777" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SEVEN HUNDRED</source>
+          <target>SETECIENTOS</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType SevenHundredTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 3174125347" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SEVENTEEN</source>
+          <target>DIECISITE</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType SeventeenTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 3934053733" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SEVEN</source>
+          <target>SIETE</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType SevenTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 2898073610" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SEVENTY</source>
+          <target>SETENTA</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType SeventyTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 1587981802" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SIX HUNDRED</source>
+          <target>SEISCIENTOS</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType SixHundredTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 614114932" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SIXTEEN</source>
+          <target>DIECISÉIS</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType SixteenTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 1660954214" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SIX</source>
+          <target>SEIS</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType SixTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 1847326649" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SIXTY</source>
+          <target>SESENTA</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType SixtyTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 3389443721" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TEN</source>
+          <target>DIEZ</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType TenTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 2893703591" size-unit="char" translate="yes" xml:space="preserve">
+          <source>THIRTEEN</source>
+          <target>TRECE</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType ThirteenTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 3806960470" size-unit="char" translate="yes" xml:space="preserve">
+          <source>THIRTY</source>
+          <target>TREINTA</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType ThirtyTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 2435513626" size-unit="char" translate="yes" xml:space="preserve">
+          <source>THOUSAND</source>
+          <target>MIL</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType ThousandTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 2672585782" size-unit="char" translate="yes" xml:space="preserve">
+          <source>THREE HUNDRED</source>
+          <target>TRESCIENTOS</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType ThreeHundredTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 199809130" size-unit="char" translate="yes" xml:space="preserve">
+          <source>THREE</source>
+          <target>TRES</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType ThreeTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 894732915" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TWELVE</source>
+          <target>DOCE</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType TwelveTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 581504247" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TWENTY</source>
+          <target>VEINTE</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType TwentyTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 1937836004" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TWO HUNDRED</source>
+          <target>DOSCIENTOS</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType TwoHundredTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 1703650376" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TWO</source>
+          <target>DOS</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType TwoTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 1826208638" size-unit="char" translate="yes" xml:space="preserve">
+          <source>WITH</source>
+          <target>CON</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType WithTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 689400137 - NamedType 1157004710" size-unit="char" translate="yes" xml:space="preserve">
+          <source>ZERO</source>
+          <target>CERO</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Format Number To Text - NamedType ZeroTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2685254199 - NamedType 194479129" size-unit="char" translate="yes" xml:space="preserve">
+          <source>GMAS: The Web Service has returned the following error:\Cod. Status: %1\Description: %2\Detail: %3</source>
+          <target>GMAS: El Servicio Web ha devuelto el siguiente error:\Cod. Estado: %1\Descripción: %2\Detalle: %3</target>
+          <note from="Developer" annotates="general" priority="2">%1 = Status Code, %2 = Description, %3 = Detail</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Web Service Request - NamedType ResultResponseErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2685254199 - NamedType 1404742739" size-unit="char" translate="yes" xml:space="preserve">
+          <source>GMAS: The web service call is unsuccessful</source>
+          <target>GMAS: La llamada al servicio web no ha tenido éxito</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Web Service Request - NamedType SendErr</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3819105142 - Control 2634692001 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Company Information - Control EIE Electronic Invoicing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3819105142 - Control 3017431195 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
+          <source>Specifies the value of the Add Comment to Sales Invoice Lines field.</source>
+          <target>Especifica el valor del campo Agregar comentario a las líneas de la factura de ventas.</target>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Company Information - Control EIE Add Comment Sales I. Lines - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3819105142 - Control 376476459 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
+          <source>Specifies the value of the Add Comment to Sales Credit Memo Lines field.</source>
+          <target>Especifica el valor del campo Agregar comentario a las líneas de la nota de crédito de ventas.</target>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Company Information - Control EIE Add Comt. Sales Cr. Lines - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3819105142 - Control 3697400171 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
+          <source>Specifies the value of the Authorization API URL field.</source>
+          <target>Especifica el valor del campo URL de la API de autorización.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Company Information - Control EIE Authorization API URL - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3819105142 - Control 3708396075 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
+          <source>Specifies the value of the Activate Electronic Invoicing field.</source>
+          <target>Especifica el valor del campo Activar Facturación Electrónica.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Company Information - Control EIE Automatic Electronic Inv. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3819105142 - Control 379882101 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
+          <source>Specifies the value of the Company Id field.</source>
+          <target>Especifica el valor del campo Id. Compañia.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Company Information - Control EIE Company Id - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3819105142 - Control 2268420146 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
+          <source>Specifies the value of the Consult API URL field.</source>
+          <target>Especifica el valor del campo Consultar URL de la API.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Company Information - Control EIE Consult API URL - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3819105142 - Control 2010527722 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
+          <source>Specifies the value of the Contract Id field.</source>
+          <target>Especifica el valor del campo Id. Contrato.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Company Information - Control EIE Contract Id - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3819105142 - Control 3445033995 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
+          <source>Specifies whether item tracking information is included in the electronic invoice XML for sales documents.</source>
+          <target>Especifica si la información de seguimiento de artículos está incluida en el XML de la factura electrónica para documentos de ventas.</target>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Company Information - Control EIE Include Item Tracking Info - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3819105142 - Control 3742105454 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
+          <source>Specifies the value of the Token URL field.</source>
+          <target>Especifica el valor del campo Token URL.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Company Information - Control EIE Token API - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3653502785 - Control 3708396075 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1583285482">
+          <source>Specifies the value of the Automatic Electronic Invoicing field.</source>
+          <target>Especifica el valor del campo Generar facturación electrónica automaticamente.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE GMAS SRI Tabla 04 - Control EIE Automatic Electronic Inv. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1844982746 - Action 2634692001 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1117940145">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purch. Withh. - Action EIE Electronic Invoicing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1844982746 - Action 2803309892 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1117940145">
+          <source>Download electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Descargar documento electrónico a la interfaz GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purch. Withh. - Action EIE Download Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1844982746 - Action 2803309892 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1117940145">
+          <source>Download Electronic Document</source>
+          <target>Descargar Documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purch. Withh. - Action EIE Download Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1844982746 - Action 1524771890 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1117940145">
+          <source>Get status electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Obtener el estado del documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purch. Withh. - Action EIE Get Status Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1844982746 - Action 1524771890 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1117940145">
+          <source>Get Status Electronic Document</source>
+          <target>Obtener el estado del documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purch. Withh. - Action EIE Get Status Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1844982746 - Action 1179980084 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1117940145">
+          <source>Send electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Enviar el documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purch. Withh. - Action EIE Send Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1844982746 - Action 1179980084 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1117940145">
+          <source>Send Electronic Document</source>
+          <target>Enviar documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purch. Withh. - Action EIE Send Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1844982746 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1117940145">
+          <source>Specifies the value of the Id. Transaction Api field.</source>
+          <target>Especifica el valor del campo Id. Api de la transacción.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purch. Withh. - Control EIE Id. Transaction Api - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4169273087 - Action 2634692001 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 279433376">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purch. Withhs. - Action EIE Electronic Invoicing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4169273087 - Action 2803309892 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 279433376">
+          <source>Download electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Descargar documento electrónico a la interfaz GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purch. Withhs. - Action EIE Download Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4169273087 - Action 2803309892 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 279433376">
+          <source>Download Electronic Document</source>
+          <target>Descargar Documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purch. Withhs. - Action EIE Download Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4169273087 - Action 1524771890 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 279433376">
+          <source>Get status electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Obtener el estado del documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purch. Withhs. - Action EIE Get Status Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4169273087 - Action 1524771890 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 279433376">
+          <source>Get Status Electronic Document</source>
+          <target>Obtener el estado del documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purch. Withhs. - Action EIE Get Status Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4169273087 - Action 1179980084 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 279433376">
+          <source>Send electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Enviar el documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purch. Withhs. - Action EIE Send Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4169273087 - Action 1179980084 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 279433376">
+          <source>Send Electronic Document</source>
+          <target>Enviar documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purch. Withhs. - Action EIE Send Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4169273087 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 279433376">
+          <source>Specifies the value of the Id. Transaction Api field.</source>
+          <target>Especifica el valor del campo Id. Api de la transacción.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purch. Withhs. - Control EIE Id. Transaction Api - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4014033022 - Action 2634692001 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4048657685">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purchase Invoice - Action EIE Electronic Invoicing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4014033022 - Action 2803309892 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4048657685">
+          <source>Download electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Descargar documento electrónico a la interfaz GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purchase Invoice - Action EIE Download Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4014033022 - Action 2803309892 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4048657685">
+          <source>Download Electronic Document</source>
+          <target>Descargar Documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purchase Invoice - Action EIE Download Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4014033022 - Action 1524771890 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4048657685">
+          <source>Get status electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Obtener el estado del documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purchase Invoice - Action EIE Get Status Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4014033022 - Action 1524771890 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4048657685">
+          <source>Get Status Electronic Document</source>
+          <target>Obtener el estado del documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purchase Invoice - Action EIE Get Status Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4014033022 - Action 1179980084 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4048657685">
+          <source>Send electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Enviar el documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purchase Invoice - Action EIE Send Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4014033022 - Action 1179980084 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4048657685">
+          <source>Send Electronic Document</source>
+          <target>Enviar documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purchase Invoice - Action EIE Send Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4014033022 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4048657685">
+          <source>Specifies the value of the Id. Transaction Api field.</source>
+          <target>Especifica el valor del campo Id. Api de la transacción.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purchase Invoice - Control EIE Id. Transaction Api - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2520007915 - Action 2634692001 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 407220332">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purchase Invoices - Action EIE Electronic Invoicing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2520007915 - Action 2803309892 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 407220332">
+          <source>Download electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Descargar documento electrónico a la interfaz GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purchase Invoices - Action EIE Download Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2520007915 - Action 2803309892 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 407220332">
+          <source>Download Electronic Document</source>
+          <target>Descargar Documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purchase Invoices - Action EIE Download Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2520007915 - Action 1524771890 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 407220332">
+          <source>Get status electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Obtener el estado del documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purchase Invoices - Action EIE Get Status Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2520007915 - Action 1524771890 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 407220332">
+          <source>Get Status Electronic Document</source>
+          <target>Obtener el estado del documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purchase Invoices - Action EIE Get Status Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2520007915 - Action 1179980084 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 407220332">
+          <source>Send electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Enviar el documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purchase Invoices - Action EIE Send Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2520007915 - Action 1179980084 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 407220332">
+          <source>Send Electronic Document</source>
+          <target>Enviar documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purchase Invoices - Action EIE Send Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2520007915 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 407220332">
+          <source>Specifies the value of the Id. Transaction Api field.</source>
+          <target>Especifica el valor del campo Id. Api de la transacción.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purchase Invoices - Control EIE Id. Transaction Api - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4052652527 - Action 2634692001 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2716593954">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Cr. Memo - Action EIE Electronic Invoicing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4052652527 - Action 2803309892 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2716593954">
+          <source>Download electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Descargar documento electrónico a la interfaz GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Cr. Memo - Action EIE Download Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4052652527 - Action 2803309892 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2716593954">
+          <source>Download Electronic Document</source>
+          <target>Descargar Documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Cr. Memo - Action EIE Download Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4052652527 - Action 1524771890 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2716593954">
+          <source>Get status electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Obtener el estado del documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Cr. Memo - Action EIE Get Status Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4052652527 - Action 1524771890 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2716593954">
+          <source>Get Status Electronic Document</source>
+          <target>Obtener el estado del documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Cr. Memo - Action EIE Get Status Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4052652527 - Action 1179980084 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2716593954">
+          <source>Send electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Enviar el documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Cr. Memo - Action EIE Send Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4052652527 - Action 1179980084 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2716593954">
+          <source>Send Electronic Document</source>
+          <target>Enviar documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Cr. Memo - Action EIE Send Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4052652527 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2716593954">
+          <source>Specifies the value of the Id. Transaction Api field.</source>
+          <target>Especifica el valor del campo Id. Api de la transacción.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Cr. Memo - Control EIE Id. Transaction Api - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4278296584 - Action 2634692001 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2557560783">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Credit Memos - Action EIE Electronic Invoicing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4278296584 - Action 2803309892 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2557560783">
+          <source>Download electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Descargar documento electrónico a la interfaz GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Credit Memos - Action EIE Download Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4278296584 - Action 2803309892 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2557560783">
+          <source>Download Electronic Document</source>
+          <target>Descargar Documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Credit Memos - Action EIE Download Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4278296584 - Action 1524771890 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2557560783">
+          <source>Get status electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Obtener el estado del documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Credit Memos - Action EIE Get Status Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4278296584 - Action 1524771890 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2557560783">
+          <source>Get Status Electronic Document</source>
+          <target>Obtener el estado del documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Credit Memos - Action EIE Get Status Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4278296584 - Action 1179980084 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2557560783">
+          <source>Send electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Enviar el documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Credit Memos - Action EIE Send Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4278296584 - Action 1179980084 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2557560783">
+          <source>Send Electronic Document</source>
+          <target>Enviar documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Credit Memos - Action EIE Send Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4278296584 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2557560783">
+          <source>Specifies the value of the Id. Transaction Api field.</source>
+          <target>Especifica el valor del campo Id. Api de la transacción.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Credit Memos - Control EIE Id. Transaction Api - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1990197635 - Action 2634692001 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Invoice - Action EIE Electronic Invoicing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1990197635 - Action 2803309892 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Download electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Descargar documento electrónico a la interfaz GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Invoice - Action EIE Download Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1990197635 - Action 2803309892 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Download Electronic Document</source>
+          <target>Descargar Documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Invoice - Action EIE Download Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1990197635 - Action 1524771890 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Get status electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Obtener el estado del documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Invoice - Action EIE Get Status Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1990197635 - Action 1524771890 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Get Status Electronic Document</source>
+          <target>Obtener el estado del documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Invoice - Action EIE Get Status Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1990197635 - Action 1179980084 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Send electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Enviar el documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Invoice - Action EIE Send Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1990197635 - Action 1179980084 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Send Electronic Document</source>
+          <target>Enviar documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Invoice - Action EIE Send Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1990197635 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the value of the Id. Transaction Api field.</source>
+          <target>Especifica el valor del campo Id. Api de la transacción.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Invoice - Control EIE Id. Transaction Api - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2524873806 - Action 2634692001 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3434938165">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Invoices - Action EIE Electronic Invoicing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2524873806 - Action 2803309892 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3434938165">
+          <source>Download electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Descargar documento electrónico a la interfaz GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Invoices - Action EIE Download Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2524873806 - Action 2803309892 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3434938165">
+          <source>Download Electronic Document</source>
+          <target>Descargar Documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Invoices - Action EIE Download Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2524873806 - Action 1524771890 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3434938165">
+          <source>Get status electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Obtener el estado del documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Invoices - Action EIE Get Status Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2524873806 - Action 1524771890 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3434938165">
+          <source>Get Status Electronic Document</source>
+          <target>Obtener el estado del documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Invoices - Action EIE Get Status Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2524873806 - Action 1179980084 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3434938165">
+          <source>Send electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Enviar el documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Invoices - Action EIE Send Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2524873806 - Action 1179980084 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3434938165">
+          <source>Send Electronic Document</source>
+          <target>Enviar documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Invoices - Action EIE Send Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2524873806 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3434938165">
+          <source>Specifies the value of the Id. Transaction Api field.</source>
+          <target>Especifica el valor del campo Id. Transacción Api.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Invoices - Control EIE Id. Transaction Api - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4178256204 - Action 2634692001 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3373253667">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Shipment - Action EIE Electronic Invoicing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4178256204 - Action 2803309892 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3373253667">
+          <source>Download electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Descargar documento electrónico a la interfaz GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Shipment - Action EIE Download Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4178256204 - Action 2803309892 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3373253667">
+          <source>Download Electronic Document</source>
+          <target>Descargar Documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Shipment - Action EIE Download Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4178256204 - Action 1524771890 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3373253667">
+          <source>Get status electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Obtener el estado del documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Shipment - Action EIE Get Status Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4178256204 - Action 1524771890 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3373253667">
+          <source>Get Status Electronic Document</source>
+          <target>Obtener el estado del documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Shipment - Action EIE Get Status Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4178256204 - Action 1179980084 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3373253667">
+          <source>Send electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Enviar el documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Shipment - Action EIE Send Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4178256204 - Action 1179980084 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3373253667">
+          <source>Send Electronic Document</source>
+          <target>Enviar documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Shipment - Action EIE Send Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4178256204 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3373253667">
+          <source>Specifies the value of the Id. Transaction Api field.</source>
+          <target>Especifica el valor del campo Id. Api de la transacción.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Shipment - Control EIE Id. Transaction Api - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3924045421 - Action 2634692001 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1840709038">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Shipments - Action EIE Electronic Invoicing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3924045421 - Action 2803309892 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1840709038">
+          <source>Download electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Descargar documento electrónico a la interfaz GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Shipments - Action EIE Download Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3924045421 - Action 2803309892 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1840709038">
+          <source>Download Electronic Document</source>
+          <target>Descargar Documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Shipments - Action EIE Download Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3924045421 - Action 1524771890 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1840709038">
+          <source>Get status electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Obtener el estado del documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Shipments - Action EIE Get Status Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3924045421 - Action 1524771890 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1840709038">
+          <source>Get Status Electronic Document</source>
+          <target>Obtener el estado del documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Shipments - Action EIE Get Status Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3924045421 - Action 1179980084 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1840709038">
+          <source>Send electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Enviar el documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Shipments - Action EIE Send Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3924045421 - Action 1179980084 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1840709038">
+          <source>Send Electronic Document</source>
+          <target>Enviar documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Shipments - Action EIE Send Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3924045421 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1840709038">
+          <source>Specifies the value of the Id. Transaction Api field.</source>
+          <target>Especifica el valor del campo Id. Api de la transacción.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Shipments - Control EIE Id. Transaction Api - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1966986413 - Action 2634692001 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4201932270">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Transfer Shipment - Action EIE Electronic Invoicing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1966986413 - Action 2803309892 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4201932270">
+          <source>Download electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Descargar documento electrónico a la interfaz GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Transfer Shipment - Action EIE Download Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1966986413 - Action 2803309892 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4201932270">
+          <source>Download Electronic Document</source>
+          <target>Descargar Documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Transfer Shipment - Action EIE Download Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1966986413 - Action 1524771890 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4201932270">
+          <source>Get status electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Obtener el estado del documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Transfer Shipment - Action EIE Get Status Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1966986413 - Action 1524771890 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4201932270">
+          <source>Get Status Electronic Document</source>
+          <target>Obtener el estado del documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Transfer Shipment - Action EIE Get Status Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1966986413 - Action 1179980084 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4201932270">
+          <source>Send electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Enviar el documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Transfer Shipment - Action EIE Send Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1966986413 - Action 1179980084 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4201932270">
+          <source>Send Electronic Document</source>
+          <target>Enviar documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Transfer Shipment - Action EIE Send Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1966986413 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4201932270">
+          <source>Specifies the value of the Id. Transaction Api field.</source>
+          <target>Especifica el valor del campo Id. Api de la transacción.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Transfer Shipment - Control EIE Id. Transaction Api - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 92774564 - Action 2634692001 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 627180795">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Transfer Shipments - Action EIE Electronic Invoicing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 92774564 - Action 2803309892 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 627180795">
+          <source>Download electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Descargar documento electrónico a la interfaz GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Transfer Shipments - Action EIE Download Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 92774564 - Action 2803309892 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 627180795">
+          <source>Download Electronic Document</source>
+          <target>Descargar Documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Transfer Shipments - Action EIE Download Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 92774564 - Action 1524771890 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 627180795">
+          <source>Get status electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Obtener el estado del documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Transfer Shipments - Action EIE Get Status Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 92774564 - Action 1524771890 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 627180795">
+          <source>Get Status Electronic Document</source>
+          <target>Obtener el estado del documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Transfer Shipments - Action EIE Get Status Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 92774564 - Action 1179980084 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 627180795">
+          <source>Send electronic document to the GRUPOMAS interface for authorization</source>
+          <target>Enviar el documento electrónico a la interfaz de GRUPOMAS para su autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Transfer Shipments - Action EIE Send Electronic Document - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 92774564 - Action 1179980084 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 627180795">
+          <source>Send Electronic Document</source>
+          <target>Enviar documento electrónico</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Transfer Shipments - Action EIE Send Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 92774564 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 627180795">
+          <source>Specifies the value of the Id. Transaction Api field.</source>
+          <target>Especifica el valor del campo Id. Api de la transacción.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Transfer Shipments - Control EIE Id. Transaction Api - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3819105142 - Field 3017431195 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3469146285">
+          <source>Add Comment to Sales Invoice Lines</source>
+          <target>Agregar comentario en líneas factura de ventas</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIE Company Information - Field EIE Add Comment Sales I. Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3819105142 - Field 376476459 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3469146285">
+          <source>Add Comment to Sales Credit Memo Lines</source>
+          <target>Agregar comentario en líneas nota de crédito de ventas</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIE Company Information - Field EIE Add Comt. Sales Cr. Lines - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3819105142 - Field 3697400171 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3469146285">
+          <source>Authorization API URL</source>
+          <target>URL de la API para autorización</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIE Company Information - Field EIE Authorization API URL - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3819105142 - Field 3708396075 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3469146285">
+          <source>Automatic Electronic Invoicing</source>
+          <target>Facturación electrónica automática</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIE Company Information - Field EIE Automatic Electronic Inv. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3819105142 - Field 379882101 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3469146285">
+          <source>Company Id</source>
+          <target>Id Compañia</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIE Company Information - Field EIE Company Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3819105142 - Field 2268420146 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3469146285">
+          <source>Consult API URL</source>
+          <target>URL de la API paras consultar</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIE Company Information - Field EIE Consult API URL - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3819105142 - Field 2010527722 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3469146285">
+          <source>Contract Id</source>
+          <target>Id Contrato</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIE Company Information - Field EIE Contract Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3819105142 - Field 3445033995 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3469146285">
+          <source>Include Item Tracking Information</source>
+          <target>Incluir información de seguimiento de artículos</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIE Company Information - Field EIE Include Item Tracking Info - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3819105142 - Field 3742105454 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3469146285">
+          <source>Token API</source>
+          <target>Token API</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIE Company Information - Field EIE Token API - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3653502785 - Field 3708396075 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1583285482">
+          <source>Automatic Electronic Invoicing</source>
+          <target>Facturación electrónica automática</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIE GMAS SRI Tabla 04 - Field EIE Automatic Electronic Inv. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4089723269 - Field 2256411826 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1592379974">
+          <source>Id. Transaction Api</source>
+          <target>Id. Transacción Api</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIE Purch. Inv. Header - Field EIE Id. Transaction Api - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1286122300 - Field 2256411826 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4150336003">
+          <source>Id. Transaction Api</source>
+          <target>Id. Transacción Api</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIE Purch. Withh. Header - Field EIE Id. Transaction Api - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2630062893 - Field 2256411826 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 552782286">
+          <source>Id. Transaction Api</source>
+          <target>Id. Transacción Api</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIE Sales Cr.Memo Header - Field EIE Id. Transaction Api - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1423832585 - Field 2256411826 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
+          <source>Id. Transaction Api</source>
+          <target>Id. Transacción Api</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIE Sales Invoice Header - Field EIE Id. Transaction Api - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3227720194 - Field 2256411826 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3118382297">
+          <source>Id. Transaction Api</source>
+          <target>Id. Transacción Api</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIE Sales Shipment Header - Field EIE Id. Transaction Api - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 889471871 - Field 2256411826 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1340367376">
+          <source>Id. Transaction Api</source>
+          <target>Id. Transacción Api</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIE Transfer Shipment Header - Field EIE Id. Transaction Api - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
