@@ -103,6 +103,19 @@ pageextension 70506 "EIE Posted Sales Shipment" extends "Posted Sales Shipment"
                 }
             }
         }
+
+        addlast(Promoted)
+        {
+            group("EIE Electronic Invoicing_Ref")
+            {
+                Image = ElectronicDoc;
+                Caption = 'Electronic Invoicing';
+                actionref(SendElectronicDocument_Promoted; "EIE Send Electronic Document") { }
+                actionref(GetStatusElectronicDocument_Promoted; "EIE Get Status Electronic Document") { }
+                actionref(DownloadElectronicDocument_Promoted; "EIE Download Electronic Document") { }
+            }
+
+        }
     }
 
     var

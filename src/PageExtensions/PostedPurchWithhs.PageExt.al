@@ -37,9 +37,6 @@ pageextension 70512 "EIE Posted Purch. Withhs." extends "GMAS SRI Posted Purch. 
                     Image = SendTo;
                     ApplicationArea = All;
                     ToolTip = 'Send electronic document to the GRUPOMAS interface for authorization';
-                    Promoted = true;
-                    PromotedIsBig = true;
-                    PromotedCategory = Process;
 
                     trigger OnAction()
                     var
@@ -70,9 +67,6 @@ pageextension 70512 "EIE Posted Purch. Withhs." extends "GMAS SRI Posted Purch. 
                     Image = Status;
                     ApplicationArea = All;
                     ToolTip = 'Get status electronic document to the GRUPOMAS interface for authorization';
-                    Promoted = true;
-                    PromotedIsBig = true;
-                    PromotedCategory = Process;
 
                     trigger OnAction()
                     var
@@ -119,6 +113,19 @@ pageextension 70512 "EIE Posted Purch. Withhs." extends "GMAS SRI Posted Purch. 
                     end;
                 }
             }
+        }
+
+        addlast(Promoted)
+        {
+            group("EIE Electronic Invoicing_Ref")
+            {
+                Image = ElectronicDoc;
+                Caption = 'Electronic Invoicing';
+                actionref(SendElectronicDocument_Promoted; "EIE Send Electronic Document") { }
+                actionref(GetStatusElectronicDocument_Promoted; "EIE Get Status Electronic Document") { }
+                actionref(DownloadElectronicDocument_Promoted; "EIE Download Electronic Document") { }
+            }
+
         }
     }
 

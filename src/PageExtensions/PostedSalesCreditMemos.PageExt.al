@@ -119,6 +119,19 @@ pageextension 70503 "EIE Posted Sales Credit Memos" extends "Posted Sales Credit
                 }
             }
         }
+
+        addlast(Promoted)
+        {
+            group("EIE Electronic Invoicing_Ref")
+            {
+                Image = ElectronicDoc;
+                Caption = 'Electronic Invoicing';
+                actionref(SendElectronicDocument_Promoted; "EIE Send Electronic Document") { }
+                actionref(GetStatusElectronicDocument_Promoted; "EIE Get Status Electronic Document") { }
+                actionref(DownloadElectronicDocument_Promoted; "EIE Download Electronic Document") { }
+            }
+
+        }
     }
 
     var

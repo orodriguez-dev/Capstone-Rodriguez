@@ -3,17 +3,161 @@
   <file datatype="xml" source-language="en-US" target-language="es-MX" original="GMAS - Electronic Invoice for Ecuador">
     <body>
       <group id="body">
-        <trans-unit id="Codeunit 2609046002 - NamedType 2191129744" size-unit="char" translate="yes" xml:space="preserve">
-          <source>A parameter must be defined to select the module to be executed: "Ventas" or "Compras".</source>
-          <target>Se debe definir un parámetro para seleccionar el módulo a ejecutar: "Ventas" o "Compras".</target>
+        <trans-unit id="Table 2096935114 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Electronic Invoicing Trace Log</source>
+          <target>Registro de trazabilidad de facturación electrónica</target>
           <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Electronic Inv. Get Status - NamedType ParameterErr</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Codeunit 3901021794 - NamedType 2191129744" size-unit="char" translate="yes" xml:space="preserve">
-          <source>A parameter must be defined to select the module to be executed: "Ventas" or "Compras".</source>
-          <target>Se debe definir un parámetro para seleccionar el módulo a ejecutar: "Ventas" o "Compras".</target>
+        <trans-unit id="Table 2096935114 - Field 1060207642 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Action performed: manual send, automatic send, status query, resend, XML download, etc.</source>
+          <target>Acción realizada: envío manual, envío automático, consulta de estado, reenvío, descarga de XML, etc.</target>
           <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Electronic Inv. Send Doc. - NamedType ParameterErr</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field Action Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 1060207642 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Action Type</source>
+          <target>Accion realizada</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field Action Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 784981356 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>API service consumed: send, status query, or XML download.</source>
+          <target>Servicio de API consumido: envío, consulta de estado o descarga de XML.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field API Consumed - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 784981356 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>API Consumed</source>
+          <target>API consumida</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field API Consumed - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 2518321075 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unique transaction identifier returned by the GrupoMAS platform.</source>
+          <target>Identificador único de transacción devuelto por la plataforma de GrupoMAS.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field API Transaction ID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 2518321075 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>API Transaction ID</source>
+          <target>Id. Transacción API</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field API Transaction ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 3018226969 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name of the customer or vendor related to the document.</source>
+          <target>Nombre del cliente o proveedor relacionado con el documento.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field Customer Vendor Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 3018226969 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer/Vendor Name</source>
+          <target>Cliente/Proveedor</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field Customer Vendor Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 2258728249 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code of the customer or vendor related to the document.</source>
+          <target>Código del cliente o proveedor relacionado con el documento.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field Customer Vendor No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 2258728249 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer/Vendor No.</source>
+          <target>N° de cliente/proveedor</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field Customer Vendor No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 1016837963 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date and time when the electronic invoicing action was recorded.</source>
+          <target>Fecha y hora en que se registró la acción de facturación electrónica.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field Date Time - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 1016837963 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date Time</source>
+          <target>Fecha y hora</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field Date Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 486908828 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number of the source document in Business Central.</source>
+          <target>Número del documento fuente en Business Central.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field Document No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <target>N° documento</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 2363328873 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type of electronic tax document: invoice, credit note, delivery guide, settlement, or withholding.</source>
+          <target>Tipo de documento tributario electrónico: factura, nota de crédito, guía de remisión, liquidación o retención.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field Document Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 2363328873 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Type</source>
+          <target>Tipo de documento</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field Document Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <target>N° movimiento</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 3349409957 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status returned by the GrupoMAS external electronic invoicing platform.</source>
+          <target>Estado devuelto por la plataforma externa de facturación electrónica de GrupoMAS.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field Received Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 3349409957 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Received Status</source>
+          <target>Estado recibido</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field Received Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 1099903468 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Message returned by the external API or generated by the extension.</source>
+          <target>Mensaje devuelto por la API externa o generado por la extensión.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field Response Message - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 1099903468 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Response Message</source>
+          <target>Mensaje de respuesta</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field Response Message - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 90601618 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Identifier of the source table in Business Central.</source>
+          <target>Identificador de la tabla de origen en Business Central.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field Source Table ID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 90601618 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Table ID</source>
+          <target>Id. de la tabla de origen</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field Source Table ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 2708250016 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>User who executed the electronic invoicing action or process.</source>
+          <target>Usuario que ejecutó la acción o proceso de facturación electrónica.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field User ID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 2096935114 - Field 2708250016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>User ID</source>
+          <target>Usuario</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table EIE Electronic Trace Log - Field User ID - Property Caption</note>
         </trans-unit>
         <trans-unit id="Codeunit 689400137 - NamedType 211220069" size-unit="char" translate="yes" xml:space="preserve">
           <source>AND</source>
@@ -309,23 +453,29 @@
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit EIE Web Service Request - NamedType SendErr</note>
         </trans-unit>
+        <trans-unit id="Page 2096935114 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Electronic Invoicing Trace Log</source>
+          <target>Registro de trazabilidad de facturación electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page EIE Electronic Trace Log - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2096935114 - Action 2026913255 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Refreshes the trace log to display the most recent records.</source>
+          <target>Actualiza el registro de trazabilidad para mostrar los registros más recientes.</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page EIE Electronic Trace Log - Action Refresh - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2096935114 - Action 2026913255 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Refresh</source>
+          <target>Actualizar</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page EIE Electronic Trace Log - Action Refresh - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 3819105142 - Control 2634692001 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
           <source>Electronic Invoicing</source>
           <target>Facturación Electrónica</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Company Information - Control EIE Electronic Invoicing - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 3819105142 - Control 3017431195 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
-          <source>Specifies the value of the Add Comment to Sales Invoice Lines field.</source>
-          <target>Especifica el valor del campo Agregar comentario a las líneas de la factura de ventas.</target>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Company Information - Control EIE Add Comment Sales I. Lines - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 3819105142 - Control 376476459 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
-          <source>Specifies the value of the Add Comment to Sales Credit Memo Lines field.</source>
-          <target>Especifica el valor del campo Agregar comentario a las líneas de la nota de crédito de ventas.</target>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Company Information - Control EIE Add Comt. Sales Cr. Lines - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3819105142 - Control 3697400171 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
           <source>Specifies the value of the Authorization API URL field.</source>
@@ -356,12 +506,6 @@
           <target>Especifica el valor del campo Id. Contrato.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Company Information - Control EIE Contract Id - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 3819105142 - Control 3445033995 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
-          <source>Specifies whether item tracking information is included in the electronic invoice XML for sales documents.</source>
-          <target>Especifica si la información de seguimiento de artículos está incluida en el XML de la factura electrónica para documentos de ventas.</target>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Company Information - Control EIE Include Item Tracking Info - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 3819105142 - Control 3742105454 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3469146285">
           <source>Specifies the value of the Token URL field.</source>
@@ -417,6 +561,12 @@
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purch. Withh. - Action EIE Send Electronic Document - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1844982746 - Action 4198646875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1117940145">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purch. Withh. - Action EIE Electronic Invoicing_Ref - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1844982746 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1117940145">
           <source>Specifies the value of the Id. Transaction Api field.</source>
           <target>Especifica el valor del campo Id. Api de la transacción.</target>
@@ -464,6 +614,12 @@
           <target>Enviar documento electrónico</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purch. Withhs. - Action EIE Send Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4169273087 - Action 4198646875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 279433376">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purch. Withhs. - Action EIE Electronic Invoicing_Ref - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 4169273087 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 279433376">
           <source>Specifies the value of the Id. Transaction Api field.</source>
@@ -513,6 +669,12 @@
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purchase Invoice - Action EIE Send Electronic Document - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 4014033022 - Action 4198646875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4048657685">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purchase Invoice - Action EIE Electronic Invoicing_Ref - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 4014033022 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4048657685">
           <source>Specifies the value of the Id. Transaction Api field.</source>
           <target>Especifica el valor del campo Id. Api de la transacción.</target>
@@ -560,6 +722,12 @@
           <target>Enviar documento electrónico</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purchase Invoices - Action EIE Send Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2520007915 - Action 4198646875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 407220332">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Purchase Invoices - Action EIE Electronic Invoicing_Ref - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 2520007915 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 407220332">
           <source>Specifies the value of the Id. Transaction Api field.</source>
@@ -609,6 +777,12 @@
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Cr. Memo - Action EIE Send Electronic Document - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 4052652527 - Action 4198646875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2716593954">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Cr. Memo - Action EIE Electronic Invoicing_Ref - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 4052652527 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2716593954">
           <source>Specifies the value of the Id. Transaction Api field.</source>
           <target>Especifica el valor del campo Id. Api de la transacción.</target>
@@ -656,6 +830,12 @@
           <target>Enviar documento electrónico</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Credit Memos - Action EIE Send Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4278296584 - Action 4198646875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2557560783">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Credit Memos - Action EIE Electronic Invoicing_Ref - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 4278296584 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2557560783">
           <source>Specifies the value of the Id. Transaction Api field.</source>
@@ -705,6 +885,12 @@
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Invoice - Action EIE Send Electronic Document - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1990197635 - Action 4198646875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Invoice - Action EIE Electronic Invoicing_Ref - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1990197635 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
           <source>Specifies the value of the Id. Transaction Api field.</source>
           <target>Especifica el valor del campo Id. Api de la transacción.</target>
@@ -752,6 +938,12 @@
           <target>Enviar documento electrónico</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Invoices - Action EIE Send Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2524873806 - Action 4198646875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3434938165">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Invoices - Action EIE Electronic Invoicing_Ref - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 2524873806 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3434938165">
           <source>Specifies the value of the Id. Transaction Api field.</source>
@@ -801,6 +993,12 @@
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Shipment - Action EIE Send Electronic Document - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 4178256204 - Action 4198646875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3373253667">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Shipment - Action EIE Electronic Invoicing_Ref - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 4178256204 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3373253667">
           <source>Specifies the value of the Id. Transaction Api field.</source>
           <target>Especifica el valor del campo Id. Api de la transacción.</target>
@@ -848,6 +1046,12 @@
           <target>Enviar documento electrónico</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Shipments - Action EIE Send Electronic Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3924045421 - Action 4198646875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1840709038">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Sales Shipments - Action EIE Electronic Invoicing_Ref - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 3924045421 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1840709038">
           <source>Specifies the value of the Id. Transaction Api field.</source>
@@ -897,6 +1101,12 @@
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Transfer Shipment - Action EIE Send Electronic Document - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1966986413 - Action 4198646875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4201932270">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Transfer Shipment - Action EIE Electronic Invoicing_Ref - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1966986413 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4201932270">
           <source>Specifies the value of the Id. Transaction Api field.</source>
           <target>Especifica el valor del campo Id. Api de la transacción.</target>
@@ -945,23 +1155,17 @@
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Transfer Shipments - Action EIE Send Electronic Document - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 92774564 - Action 4198646875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 627180795">
+          <source>Electronic Invoicing</source>
+          <target>Facturación Electrónica</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Transfer Shipments - Action EIE Electronic Invoicing_Ref - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 92774564 - Control 2256411826 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 627180795">
           <source>Specifies the value of the Id. Transaction Api field.</source>
           <target>Especifica el valor del campo Id. Api de la transacción.</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension EIE Posted Transfer Shipments - Control EIE Id. Transaction Api - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 3819105142 - Field 3017431195 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3469146285">
-          <source>Add Comment to Sales Invoice Lines</source>
-          <target>Agregar comentario en líneas factura de ventas</target>
-          <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIE Company Information - Field EIE Add Comment Sales I. Lines - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 3819105142 - Field 376476459 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3469146285">
-          <source>Add Comment to Sales Credit Memo Lines</source>
-          <target>Agregar comentario en líneas nota de crédito de ventas</target>
-          <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIE Company Information - Field EIE Add Comt. Sales Cr. Lines - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3819105142 - Field 3697400171 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3469146285">
           <source>Authorization API URL</source>
@@ -992,12 +1196,6 @@
           <target>Id Contrato</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIE Company Information - Field EIE Contract Id - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 3819105142 - Field 3445033995 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3469146285">
-          <source>Include Item Tracking Information</source>
-          <target>Incluir información de seguimiento de artículos</target>
-          <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIE Company Information - Field EIE Include Item Tracking Info - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3819105142 - Field 3742105454 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3469146285">
           <source>Token API</source>
@@ -1046,6 +1244,108 @@
           <target>Id. Transacción Api</target>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension EIE Transfer Shipment Header - Field EIE Id. Transaction Api - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1465026114 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <target> </target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EIE Trace Action Type - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1465026114 - EnumValue 3855466973 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>API Response</source>
+          <target>Respuesta de la API</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EIE Trace Action Type - EnumValue API Response - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1465026114 - EnumValue 2723561501 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Resend</source>
+          <target>Reenviar</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EIE Trace Action Type - EnumValue Resend - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1465026114 - EnumValue 4174539456 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send</source>
+          <target>Enviar</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EIE Trace Action Type - EnumValue Send - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1465026114 - EnumValue 1770755146 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status Query</source>
+          <target>Consulta de estado</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EIE Trace Action Type - EnumValue Status Query - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1465026114 - EnumValue 2867527549 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Validation Error</source>
+          <target>Error de validación</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EIE Trace Action Type - EnumValue Validation Error - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1465026114 - EnumValue 1134154495 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>XML Download</source>
+          <target>Descarga de XML</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EIE Trace Action Type - EnumValue XML Download - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 4288349876 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <target> </target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EIE Trace API Consumed - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 4288349876 - EnumValue 2164291648 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Consult</source>
+          <target>Consultar</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EIE Trace API Consumed - EnumValue Consult - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 4288349876 - EnumValue 593408208 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Download</source>
+          <target>Descargar</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EIE Trace API Consumed - EnumValue Download - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 4288349876 - EnumValue 4174539456 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send</source>
+          <target>Enviar</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EIE Trace API Consumed - EnumValue Send - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3702403185 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <target> </target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EIE Trace Document Type - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3702403185 - EnumValue 2437096118 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Settlement</source>
+          <target>Liquidación de compra</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EIE Trace Document Type - EnumValue Purchase Invoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3702403185 - EnumValue 4034504634 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Withholding</source>
+          <target>Retención de compra</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EIE Trace Document Type - EnumValue Purchase Withholding - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3702403185 - EnumValue 1708100201 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Credit Memo</source>
+          <target>Nota de crédito de venta</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EIE Trace Document Type - EnumValue Sales Credit Memo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3702403185 - EnumValue 4034894651 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Invoice</source>
+          <target>Factura de venta</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EIE Trace Document Type - EnumValue Sales Invoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3702403185 - EnumValue 2746818404 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Shipment</source>
+          <target>Guia de Remision de venta</target>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EIE Trace Document Type - EnumValue Sales Shipment - Property Caption</note>
         </trans-unit>
       </group>
     </body>

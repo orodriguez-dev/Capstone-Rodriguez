@@ -80,6 +80,7 @@ codeunit 70502 "EIE Electronic Invoicing"
     var
         CompanyInformation: Record "Company Information";
         Customer: Record Customer;
+        TraceLogManagement: Codeunit "EIE Trace Log Management";
         EIEWebServiceRequest: codeunit "EIE Web Service Request";
         JsonBody: JsonObject;
         ResponseJson: JsonObject;
@@ -87,6 +88,7 @@ codeunit 70502 "EIE Electronic Invoicing"
         DocumentTypeCode: Code[3];
         IdentificadorTransaccion: Code[20];
         GMASEIElectronicDocStatus: Enum "GMAS EI Electronic Doc. Status";
+        TraceActionType: Enum "EIE Trace Action Type";
         Estado: Text;
         XmlDocText: Text;
         CodigoError: Text;
@@ -136,12 +138,27 @@ codeunit 70502 "EIE Electronic Invoicing"
 
                 GMASEIElectronicDocStatus := GetElectronicStatus(Estado);
 
+                if SalesInvoiceHeader."GMAS EI Electronic Doc. Status" = Enum::"GMAS EI Electronic Doc. Status"::" " then
+                    TraceActionType := "EIE Trace Action Type"::Send
+                else
+                    TraceActionType := "EIE Trace Action Type"::Resend;
+
                 SalesInvoiceHeader."GMAS EI Electronic Doc. Status" := GMASEIElectronicDocStatus;
                 SalesInvoiceHeader."EIE Id. Transaction Api" := IdentificadorTransaccion;
                 SalesInvoiceHeader."GMAS EI Error Code" := CopyStr(CodigoError, 1, 10);
                 SalesInvoiceHeader.SetErrorDescription(DescripcionError);
                 SalesInvoiceHeader.Modify();
 
+                TraceLogManagement.InsertTraceLog("EIE Trace Document Type"::"Sales Invoice",
+                                                  SalesInvoiceHeader."No.",
+                                                  SalesInvoiceHeader."Bill-to Customer No.",
+                                                  SalesInvoiceHeader."Bill-to Name",
+                                                  TraceActionType,
+                                                  "EIE Trace API Consumed"::Send,
+                                                  GMASEIElectronicDocStatus,
+                                                  DescripcionError,
+                                                  IdentificadorTransaccion,
+                                                  Database::"Sales Invoice Header");
                 if Estado = '01' then begin
                     Clear(JsonBody);
                     JsonBody.Add(TipoDocumentoTxt, DocumentTypeCode);
@@ -721,8 +738,21 @@ codeunit 70502 "EIE Electronic Invoicing"
     /// </summary>
     /// <param name="SalesInvoiceHeader">Record "Sales Invoice Header".</param>
     procedure DownloadSalesInvoiceDocument(SalesInvoiceHeader: Record "Sales Invoice Header")
+    var
+        TraceLogManagement: Codeunit "EIE Trace Log Management";
     begin
         GenerateSalesInvoiceDocument(SalesInvoiceHeader).DownloadFileXml(SalesInvoiceHeader."No." + '.xml');
+
+        TraceLogManagement.InsertTraceLog("EIE Trace Document Type"::"Sales Invoice",
+                                           SalesInvoiceHeader."No.",
+                                           SalesInvoiceHeader."Bill-to Customer No.",
+                                           SalesInvoiceHeader."Bill-to Name",
+                                           "EIE Trace Action Type"::"XML Download",
+                                           "EIE Trace API Consumed"::Download,
+                                           SalesInvoiceHeader."GMAS EI Electronic Doc. Status",
+                                           'XML Descargado correctamente',
+                                           SalesInvoiceHeader."EIE Id. Transaction Api",
+                                           Database::"Sales Invoice Header");
     end;
 
     /// <summary>
@@ -733,6 +763,7 @@ codeunit 70502 "EIE Electronic Invoicing"
     var
         CompanyInformation: Record "Company Information";
         EIEWebServiceRequest: Codeunit "EIE Web Service Request";
+        TraceLogManagement: Codeunit "EIE Trace Log Management";
         GMASEIElectronicDocStatus: Enum "GMAS EI Electronic Doc. Status";
         DocumentTypeCode: Code[3];
         ResponseText: Text;
@@ -793,6 +824,17 @@ codeunit 70502 "EIE Electronic Invoicing"
             SalesInvoiceHeader."GMAS SRI Authorization Date" := AuthorizationDateTime;
             SalesInvoiceHeader.SetErrorDescription(DescripcionError);
             SalesInvoiceHeader.Modify();
+
+            TraceLogManagement.InsertTraceLog("EIE Trace Document Type"::"Sales Invoice",
+                                                  SalesInvoiceHeader."No.",
+                                                  SalesInvoiceHeader."Bill-to Customer No.",
+                                                  SalesInvoiceHeader."Bill-to Name",
+                                                  "EIE Trace Action Type"::"Status Query",
+                                                  "EIE Trace API Consumed"::Consult,
+                                                  GMASEIElectronicDocStatus,
+                                                  DescripcionError,
+                                                  SalesInvoiceHeader."EIE Id. Transaction Api",
+                                                  Database::"Sales Invoice Header");
         end;
     end;
 
@@ -805,8 +847,10 @@ codeunit 70502 "EIE Electronic Invoicing"
         CompanyInformation: Record "Company Information";
         Customer: Record Customer;
         EIEWebServiceRequest: Codeunit "EIE Web Service Request";
+        TraceLogManagement: Codeunit "EIE Trace Log Management";
         IdentificadorTransaccion: Text[20];
         GMASEIElectronicDocStatus: Enum "GMAS EI Electronic Doc. Status";
+        TraceActionType: Enum "EIE Trace Action Type";
         Estado: Text;
         XmlDocText: Text;
         CodigoError: Text;
@@ -855,11 +899,27 @@ codeunit 70502 "EIE Electronic Invoicing"
 
                 GMASEIElectronicDocStatus := GetElectronicStatus(Estado);
 
+                if SalesCrMemoHeader."GMAS EI Electronic Doc. Status" = Enum::"GMAS EI Electronic Doc. Status"::" " then
+                    TraceActionType := "EIE Trace Action Type"::Send
+                else
+                    TraceActionType := "EIE Trace Action Type"::Resend;
+
                 SalesCrMemoHeader."GMAS EI Electronic Doc. Status" := GMASEIElectronicDocStatus;
                 SalesCrMemoHeader."EIE Id. Transaction Api" := IdentificadorTransaccion;
                 SalesCrMemoHeader."GMAS EI Error Code" := CopyStr(CodigoError, 1, 10);
                 SalesCrMemoHeader.SetErrorDescription(DescripcionError);
                 SalesCrMemoHeader.Modify();
+
+                TraceLogManagement.InsertTraceLog("EIE Trace Document Type"::"Sales Credit Memo",
+                                                  SalesCrMemoHeader."No.",
+                                                  SalesCrMemoHeader."Bill-to Customer No.",
+                                                  SalesCrMemoHeader."Bill-to Name",
+                                                  TraceActionType,
+                                                  "EIE Trace API Consumed"::Send,
+                                                  GMASEIElectronicDocStatus,
+                                                  DescripcionError,
+                                                  IdentificadorTransaccion,
+                                                  Database::"Sales Cr.Memo Header");
 
                 if Estado = '01' then begin
                     Clear(JsonBody);
@@ -1209,8 +1269,21 @@ codeunit 70502 "EIE Electronic Invoicing"
     /// </summary>
     /// <param name="SalesCrMemoHeader">Record "Sales Cr.Memo Header".</param>
     procedure DownloadSalesCreditMemoDocument(SalesCrMemoHeader: Record "Sales Cr.Memo Header")
+    var
+        TraceLogManagement: Codeunit "EIE Trace Log Management";
     begin
         GenerateSalesCreditMemoDocument(SalesCrMemoHeader).DownloadFileXml(SalesCrMemoHeader."No." + '.xml');
+
+        TraceLogManagement.InsertTraceLog("EIE Trace Document Type"::"Sales Credit Memo",
+                                           SalesCrMemoHeader."No.",
+                                           SalesCrMemoHeader."Bill-to Customer No.",
+                                           SalesCrMemoHeader."Bill-to Name",
+                                           "EIE Trace Action Type"::"XML Download",
+                                           "EIE Trace API Consumed"::Download,
+                                           SalesCrMemoHeader."GMAS EI Electronic Doc. Status",
+                                           'XML Descargado correctamente',
+                                           SalesCrMemoHeader."EIE Id. Transaction Api",
+                                           Database::"Sales Cr.Memo Header");
     end;
 
     /// <summary>
@@ -1221,6 +1294,7 @@ codeunit 70502 "EIE Electronic Invoicing"
     var
         CompanyInformation: Record "Company Information";
         EIEWebServiceRequest: Codeunit "EIE Web Service Request";
+        TraceLogManagement: Codeunit "EIE Trace Log Management";
         GMASEIElectronicDocStatus: Enum "GMAS EI Electronic Doc. Status";
         ResponseText: Text;
         Estado: Text;
@@ -1277,6 +1351,17 @@ codeunit 70502 "EIE Electronic Invoicing"
             SalesCrMemoHeader."GMAS SRI Authorization Date" := AuthorizationDateTime;
             SalesCrMemoHeader.SetErrorDescription(DescripcionError);
             SalesCrMemoHeader.Modify();
+
+            TraceLogManagement.InsertTraceLog("EIE Trace Document Type"::"Sales Credit Memo",
+                                               SalesCrMemoHeader."No.",
+                                               SalesCrMemoHeader."Bill-to Customer No.",
+                                               SalesCrMemoHeader."Bill-to Name",
+                                               "EIE Trace Action Type"::"Status Query",
+                                               "EIE Trace API Consumed"::Consult,
+                                               GMASEIElectronicDocStatus,
+                                               DescripcionError,
+                                               SalesCrMemoHeader."EIE Id. Transaction Api",
+                                               Database::"Sales Cr.Memo Header");
         end;
     end;
 
@@ -1289,12 +1374,14 @@ codeunit 70502 "EIE Electronic Invoicing"
         CompanyInformation: Record "Company Information";
         Customer: Record Customer;
         EIEWebServiceRequest: Codeunit "EIE Web Service Request";
+        TraceLogManagement: Codeunit "EIE Trace Log Management";
         XmlDocText: Text;
         ResponseText: Text;
         Estado: Text;
         CodigoError: Text;
         DescripcionError: Text;
         GMASEIElectronicDocStatus: Enum "GMAS EI Electronic Doc. Status";
+        TraceActionType: Enum "EIE Trace Action Type";
         IdentificadorTransaccion: Text[20];
         JsonBody: JsonObject;
         ResponseJson: JsonObject;
@@ -1340,11 +1427,27 @@ codeunit 70502 "EIE Electronic Invoicing"
 
                 GMASEIElectronicDocStatus := GetElectronicStatus(Estado);
 
+                if SalesShipmentHeader."GMAS EI Electronic Doc. Status" = Enum::"GMAS EI Electronic Doc. Status"::" " then
+                    TraceActionType := "EIE Trace Action Type"::Send
+                else
+                    TraceActionType := "EIE Trace Action Type"::Resend;
+
                 SalesShipmentHeader."GMAS EI Electronic Doc. Status" := GMASEIElectronicDocStatus;
                 SalesShipmentHeader."EIE Id. Transaction Api" := IdentificadorTransaccion;
                 SalesShipmentHeader."GMAS EI Error Code" := CopyStr(CodigoError, 1, 10);
                 SalesShipmentHeader.SetErrorDescription(DescripcionError);
                 SalesShipmentHeader.Modify();
+
+                TraceLogManagement.InsertTraceLog("EIE Trace Document Type"::"Sales Shipment",
+                                                  SalesShipmentHeader."No.",
+                                                  SalesShipmentHeader."Bill-to Customer No.",
+                                                  SalesShipmentHeader."Bill-to Name",
+                                                  TraceActionType,
+                                                  "EIE Trace API Consumed"::Send,
+                                                  GMASEIElectronicDocStatus,
+                                                  DescripcionError,
+                                                  IdentificadorTransaccion,
+                                                  Database::"Sales Shipment Header");
 
                 if Estado = '01' then begin
                     Clear(JsonBody);
@@ -1540,8 +1643,20 @@ codeunit 70502 "EIE Electronic Invoicing"
     /// <param name="SalesShipmentHeader">Record "Sales Shipment Header".</param>
     procedure DownloadSalesShipmenDocument(SalesShipmentHeader: Record "Sales Shipment Header")
     var
+        TraceLogManagement: Codeunit "EIE Trace Log Management";
     begin
         GenerateSalesShipmentDocument(SalesShipmentHeader).DownloadFileXml(SalesShipmentHeader."No." + '.xml');
+
+        TraceLogManagement.InsertTraceLog("EIE Trace Document Type"::"Sales Shipment",
+                                           SalesShipmentHeader."No.",
+                                           SalesShipmentHeader."Bill-to Customer No.",
+                                           SalesShipmentHeader."Bill-to Name",
+                                           "EIE Trace Action Type"::"XML Download",
+                                           "EIE Trace API Consumed"::Download,
+                                           SalesShipmentHeader."GMAS EI Electronic Doc. Status",
+                                           'XML Descargado correctamente',
+                                           SalesShipmentHeader."EIE Id. Transaction Api",
+                                           Database::"Sales Shipment Header");
     end;
 
     /// <summary>
@@ -1552,6 +1667,7 @@ codeunit 70502 "EIE Electronic Invoicing"
     var
         CompanyInformation: Record "Company Information";
         EIEWebServiceRequest: Codeunit "EIE Web Service Request";
+        TraceLogManagement: Codeunit "EIE Trace Log Management";
         GMASEIElectronicDocStatus: Enum "GMAS EI Electronic Doc. Status";
         ResponseText: Text;
         Estado: Text;
@@ -1608,6 +1724,17 @@ codeunit 70502 "EIE Electronic Invoicing"
             SalesShipmentHeader."GMAS SRI Authorization Date" := AuthorizationDateTime;
             SalesShipmentHeader.SetErrorDescription(DescripcionError);
             SalesShipmentHeader.Modify();
+
+            TraceLogManagement.InsertTraceLog("EIE Trace Document Type"::"Sales Shipment",
+                                               SalesShipmentHeader."No.",
+                                               SalesShipmentHeader."Bill-to Customer No.",
+                                               SalesShipmentHeader."Bill-to Name",
+                                               "EIE Trace Action Type"::"Status Query",
+                                               "EIE Trace API Consumed"::Consult,
+                                               GMASEIElectronicDocStatus,
+                                               DescripcionError,
+                                               SalesShipmentHeader."EIE Id. Transaction Api",
+                                               Database::"Sales Shipment Header");
         end;
     end;
 
@@ -1922,7 +2049,9 @@ codeunit 70502 "EIE Electronic Invoicing"
         CompanyInformation: Record "Company Information";
         Vendor: Record Vendor;
         EIEWebServiceRequest: Codeunit "EIE Web Service Request";
+        TraceLogManagement: Codeunit "EIE Trace Log Management";
         GMASEIElectronicDocStatus: Enum "GMAS EI Electronic Doc. Status";
+        TraceActionType: Enum "EIE Trace Action Type";
         IdentificadorTransaccion: Text[20];
         DescripcionError: Text;
         ResponseText: Text;
@@ -1976,12 +2105,27 @@ codeunit 70502 "EIE Electronic Invoicing"
 
                 GMASEIElectronicDocStatus := GetElectronicStatus(Estado);
 
+                if PurchInvHeader."GMAS EI Electronic Doc. Status" = Enum::"GMAS EI Electronic Doc. Status"::" " then
+                    TraceActionType := "EIE Trace Action Type"::Send
+                else
+                    TraceActionType := "EIE Trace Action Type"::Resend;
+
                 PurchInvHeader."GMAS EI Electronic Doc. Status" := GMASEIElectronicDocStatus;
                 PurchInvHeader."EIE Id. Transaction Api" := IdentificadorTransaccion;
                 PurchInvHeader."GMAS EI Error Code" := CopyStr(CodigoError, 1, 10);
                 PurchInvHeader.SetErrorDescription(DescripcionError);
                 PurchInvHeader.Modify();
 
+                TraceLogManagement.InsertTraceLog("EIE Trace Document Type"::"Purchase Invoice",
+                                                  PurchInvHeader."No.",
+                                                  PurchInvHeader."Buy-from Vendor No.",
+                                                  PurchInvHeader."Buy-from Vendor Name",
+                                                  TraceActionType,
+                                                  "EIE Trace API Consumed"::Send,
+                                                  GMASEIElectronicDocStatus,
+                                                  DescripcionError,
+                                                  IdentificadorTransaccion,
+                                                  Database::"Purch. Inv. Header");
                 if Estado = '01' then begin
                     Clear(JsonBody);
                     JsonBody.Add(TipoDocumentoTxt, PurchInvHeader."GMAS SRI Document Type Code");
@@ -2347,8 +2491,21 @@ codeunit 70502 "EIE Electronic Invoicing"
     /// </summary>
     /// <param name="PurchInvHeader">Record "Purch. Inv. Header".</param>
     procedure DownloadPurchInvoiceDocument(PurchInvHeader: Record "Purch. Inv. Header")
+    var
+        TraceLogManagement: Codeunit "EIE Trace Log Management";
     begin
         GeneratePurchInvoiceDocument(PurchInvHeader).DownloadFileXml(PurchInvHeader."No." + '.xml');
+
+        TraceLogManagement.InsertTraceLog("EIE Trace Document Type"::"Purchase Invoice",
+                                           PurchInvHeader."No.",
+                                           PurchInvHeader."Buy-from Vendor No.",
+                                           PurchInvHeader."Buy-from Vendor Name",
+                                           "EIE Trace Action Type"::"XML Download",
+                                           "EIE Trace API Consumed"::Download,
+                                           PurchInvHeader."GMAS EI Electronic Doc. Status",
+                                           'XML Descargado correctamente',
+                                           PurchInvHeader."EIE Id. Transaction Api",
+                                           Database::"Purch. Inv. Header");
     end;
 
     /// <summary>
@@ -2359,6 +2516,7 @@ codeunit 70502 "EIE Electronic Invoicing"
     var
         CompanyInformation: Record "Company Information";
         EIEWebServiceRequest: Codeunit "EIE Web Service Request";
+        TraceLogManagement: Codeunit "EIE Trace Log Management";
         GMASEIElectronicDocStatus: Enum "GMAS EI Electronic Doc. Status";
         ResponseText: Text;
         Estado: Text;
@@ -2415,6 +2573,17 @@ codeunit 70502 "EIE Electronic Invoicing"
             PurchInvHeader."GMAS SRI Authorization Date" := AuthorizationDateTime;
             PurchInvHeader.SetErrorDescription(DescripcionError);
             PurchInvHeader.Modify();
+
+            TraceLogManagement.InsertTraceLog("EIE Trace Document Type"::"Purchase Invoice",
+                                               PurchInvHeader."No.",
+                                               PurchInvHeader."Buy-from Vendor No.",
+                                               PurchInvHeader."Buy-from Vendor Name",
+                                               "EIE Trace Action Type"::"Status Query",
+                                               "EIE Trace API Consumed"::Consult,
+                                               GMASEIElectronicDocStatus,
+                                               DescripcionError,
+                                               PurchInvHeader."EIE Id. Transaction Api",
+                                               Database::"Purch. Inv. Header");
         end;
     end;
 
@@ -2427,7 +2596,9 @@ codeunit 70502 "EIE Electronic Invoicing"
         CompanyInformation: Record "Company Information";
         Vendor: Record Vendor;
         EIEWebServiceRequest: Codeunit "EIE Web Service Request";
+        TraceLogManagement: Codeunit "EIE Trace Log Management";
         GMASEIElectronicDocStatus: Enum "GMAS EI Electronic Doc. Status";
+        TraceActionType: Enum "EIE Trace Action Type";
         IdentificadorTransaccion: Text[20];
         DescripcionError: Text;
         ResponseText: Text;
@@ -2481,11 +2652,27 @@ codeunit 70502 "EIE Electronic Invoicing"
 
                 GMASEIElectronicDocStatus := GetElectronicStatus(Estado);
 
+                if GMASSRIPurchWithhHeader."EI Electronic Doc. Status" = Enum::"GMAS EI Electronic Doc. Status"::" " then
+                    TraceActionType := "EIE Trace Action Type"::Send
+                else
+                    TraceActionType := "EIE Trace Action Type"::Resend;
+
                 GMASSRIPurchWithhHeader."EI Electronic Doc. Status" := GMASEIElectronicDocStatus;
                 GMASSRIPurchWithhHeader."EIE Id. Transaction Api" := IdentificadorTransaccion;
                 GMASSRIPurchWithhHeader."EI Error Code" := CopyStr(CodigoError, 1, 10);
                 GMASSRIPurchWithhHeader.SetErrorDescription(DescripcionError);
                 GMASSRIPurchWithhHeader.Modify();
+
+                TraceLogManagement.InsertTraceLog("EIE Trace Document Type"::"Purchase Withholding",
+                                                  GMASSRIPurchWithhHeader."No.",
+                                                  GMASSRIPurchWithhHeader."Buy-from Vendor No.",
+                                                  GMASSRIPurchWithhHeader."Buy-from Vendor Name",
+                                                  TraceActionType,
+                                                  "EIE Trace API Consumed"::Send,
+                                                  GMASEIElectronicDocStatus,
+                                                  DescripcionError,
+                                                  IdentificadorTransaccion,
+                                                  Database::"GMAS SRI Purch. Withh. Header");
 
                 if Estado = '01' then begin
                     Clear(JsonBody);
@@ -2857,8 +3044,21 @@ codeunit 70502 "EIE Electronic Invoicing"
     /// </summary>
     /// <param name="GMASSRIPurchWithhHeader">Record "GMAS SRI Purch. Withh. Header".</param>
     procedure DownloadPurchWithholdingDocument(GMASSRIPurchWithhHeader: Record "GMAS SRI Purch. Withh. Header")
+    var
+        TraceLogManagement: Codeunit "EIE Trace Log Management";
     begin
         GeneratePurchWithholdingDocument(GMASSRIPurchWithhHeader).DownloadFileXml(GMASSRIPurchWithhHeader."No." + '.xml');
+
+        TraceLogManagement.InsertTraceLog("EIE Trace Document Type"::"Purchase Withholding",
+                                           GMASSRIPurchWithhHeader."No.",
+                                           GMASSRIPurchWithhHeader."Buy-from Vendor No.",
+                                           GMASSRIPurchWithhHeader."Buy-from Vendor Name",
+                                           "EIE Trace Action Type"::"XML Download",
+                                           "EIE Trace API Consumed"::Download,
+                                           GMASSRIPurchWithhHeader."EI Electronic Doc. Status",
+                                           'XML Descargado correctamente',
+                                           GMASSRIPurchWithhHeader."EIE Id. Transaction Api",
+                                           Database::"GMAS SRI Purch. Withh. Header");
     end;
 
     /// <summary>
@@ -2869,6 +3069,7 @@ codeunit 70502 "EIE Electronic Invoicing"
     var
         CompanyInformation: Record "Company Information";
         EIEWebServiceRequest: Codeunit "EIE Web Service Request";
+        TraceLogManagement: Codeunit "EIE Trace Log Management";
         GMASEIElectronicDocStatus: Enum "GMAS EI Electronic Doc. Status";
         ResponseText: Text;
         Estado: Text;
@@ -2925,6 +3126,17 @@ codeunit 70502 "EIE Electronic Invoicing"
             GMASSRIPurchWithhHeader."SRI Authorization Date" := AuthorizationDateTime;
             GMASSRIPurchWithhHeader.SetErrorDescription(DescripcionError);
             GMASSRIPurchWithhHeader.Modify();
+
+            TraceLogManagement.InsertTraceLog("EIE Trace Document Type"::"Purchase Withholding",
+                                               GMASSRIPurchWithhHeader."No.",
+                                               GMASSRIPurchWithhHeader."Buy-from Vendor No.",
+                                               GMASSRIPurchWithhHeader."Buy-from Vendor Name",
+                                               "EIE Trace Action Type"::"Status Query",
+                                               "EIE Trace API Consumed"::Consult,
+                                               GMASEIElectronicDocStatus,
+                                               DescripcionError,
+                                               GMASSRIPurchWithhHeader."EIE Id. Transaction Api",
+                                               Database::"GMAS SRI Purch. Withh. Header");
         end;
     end;
 
