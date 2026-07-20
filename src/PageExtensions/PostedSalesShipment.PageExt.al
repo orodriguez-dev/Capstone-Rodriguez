@@ -1,3 +1,8 @@
+namespace GMAS.ELectronicInvoicing.Ecuador;
+
+using Microsoft.Inventory.Location;
+using Microsoft.Sales.History;
+
 /// <summary>
 /// PageExtension EIE Posted Sales Shipment (ID 70506) extends Record Posted Sales Shipment.
 /// </summary>
@@ -43,7 +48,7 @@ pageextension 70506 "EIE Posted Sales Shipment" extends "Posted Sales Shipment"
                             and (Rec."GMAS SRI Document Type Code" <> '') then begin
                             ResponsibilityCenter.Get(Rec."Responsibility Center");
                             GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
-                            if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                            if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then
                                 EIEElectronicInvoicing.AuthorizeSalesShipmentDocument(Rec);
                             CurrPage.Update(false);
                         end;
@@ -67,7 +72,7 @@ pageextension 70506 "EIE Posted Sales Shipment" extends "Posted Sales Shipment"
                         and (Rec."GMAS SRI Document Type Code" <> '') then begin
                             ResponsibilityCenter.Get(Rec."Responsibility Center");
                             GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
-                            if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                            if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then
                                 EIEElectronicInvoicing.StatusSalesShipmenDocument(Rec);
                             CurrPage.Update(false);
                         end;
@@ -90,7 +95,7 @@ pageextension 70506 "EIE Posted Sales Shipment" extends "Posted Sales Shipment"
                         if Rec."GMAS SRI Document Type Code" <> '' then begin
                             ResponsibilityCenter.Get(Rec."Responsibility Center");
                             GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
-                            if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                            if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then
                                 EIEElectronicInvoicing.DownloadSalesShipmenDocument(Rec);
                             CurrPage.Update(false);
                         end;

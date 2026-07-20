@@ -1,3 +1,7 @@
+namespace GMAS.ELectronicInvoicing.Ecuador;
+
+using Microsoft.Sales.History;
+
 /// <summary>
 /// TableExtension EIE Sales Invoice Header (ID 70501) extends Record Sales Invoice Header.
 /// </summary>

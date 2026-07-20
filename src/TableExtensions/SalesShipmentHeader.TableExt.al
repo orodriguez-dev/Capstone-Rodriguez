@@ -1,3 +1,7 @@
+namespace GMAS.ELectronicInvoicing.Ecuador;
+
+using Microsoft.Sales.History;
+
 /// <summary>
 /// TableExtension EIE Sales Shipment Header (ID 70503) extends Record Sales Shipment Header.
 /// </summary>

@@ -1,3 +1,6 @@
+namespace GMAS.ELectronicInvoicing.Ecuador;
+using Microsoft.Foundation.Company;
+
 /// <summary>
 /// TableExtension EIE Company Information (ID 70500) extends Record Company Information.
 /// </summary>

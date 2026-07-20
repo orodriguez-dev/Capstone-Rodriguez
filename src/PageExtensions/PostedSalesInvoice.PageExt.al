@@ -1,3 +1,8 @@
+namespace GMAS.ELectronicInvoicing.Ecuador;
+
+using Microsoft.Inventory.Location;
+using Microsoft.Sales.History;
+
 /// <summary>
 /// PageExtension EIE Posted Sales Invoice (ID 70502) extends Record Posted Sales Invoice.
 /// </summary>
@@ -45,7 +50,7 @@ pageextension 70502 "EIE Posted Sales Invoice" extends "Posted Sales Invoice"
                             Rec.CalcFields("Amount Including VAT");
                             ResponsibilityCenter.Get(Rec."Responsibility Center");
                             GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
-                            if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then begin
+                            if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then begin
                                 GMASSRITabla02.Get(Rec."GMAS SRI Ident. Type Code");
                                 if (GMASSRITabla02."EI Maximum Amount" = 0) or
                                     ((Rec."Amount Including VAT" <= GMASSRITabla02."EI Maximum Amount") and (GMASSRITabla02."EI Maximum Amount" <> 0)) then
@@ -75,7 +80,7 @@ pageextension 70502 "EIE Posted Sales Invoice" extends "Posted Sales Invoice"
                             and (Rec."GMAS SRI Document Type Code" <> '') then begin
                             ResponsibilityCenter.Get(Rec."Responsibility Center");
                             GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
-                            if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                            if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then
                                 EIEElectronicInvoicing.StatusSalesInvoiceDocument(Rec);
                             CurrPage.Update(false);
                         end;
@@ -98,7 +103,7 @@ pageextension 70502 "EIE Posted Sales Invoice" extends "Posted Sales Invoice"
                         if Rec."GMAS SRI Document Type Code" <> '' then begin
                             ResponsibilityCenter.Get(Rec."Responsibility Center");
                             GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
-                            if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                            if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then
                                 EIEElectronicInvoicing.DownloadSalesInvoiceDocument(Rec);
                             CurrPage.Update(false);
                         end;

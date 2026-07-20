@@ -1,3 +1,7 @@
+namespace GMAS.ELectronicInvoicing.Ecuador;
+
+using Microsoft.Purchases.History;
+
 /// <summary>
 /// TableExtension EIE Purch. Inv. Header (ID 70505) extends Record Purch. Inv. Header.
 /// </summary>

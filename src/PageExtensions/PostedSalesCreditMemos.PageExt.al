@@ -1,3 +1,8 @@
+namespace GMAS.ELectronicInvoicing.Ecuador;
+
+using Microsoft.Inventory.Location;
+using Microsoft.Sales.History;
+
 /// <summary>
 /// PageExtension EIE Posted Sales Credit Memos (ID 70503) extends Record Posted Sales Credit Memos.
 /// </summary>
@@ -52,7 +57,7 @@ pageextension 70503 "EIE Posted Sales Credit Memos" extends "Posted Sales Credit
                             repeat
                                 ResponsibilityCenter.Get(SalesCrMemoHeader."Responsibility Center");
                                 GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
-                                if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                                if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then
                                     if (SalesCrMemoHeader."GMAS EI Electronic Doc. Status" <> Rec."GMAS EI Electronic Doc. Status"::Received) and (SalesCrMemoHeader."GMAS EI Electronic Doc. Status" <> Rec."GMAS EI Electronic Doc. Status"::Sent) then
                                         EIEElectronicInvoicing.AuthorizeSalesCreditMemoDocument(SalesCrMemoHeader);
                             until SalesCrMemoHeader.Next() = 0;
@@ -83,7 +88,7 @@ pageextension 70503 "EIE Posted Sales Credit Memos" extends "Posted Sales Credit
                             repeat
                                 ResponsibilityCenter.Get(SalesCrMemoHeader."Responsibility Center");
                                 GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
-                                if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                                if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then
                                     EIEElectronicInvoicing.StatusSalesCreditMemoDocument(SalesCrMemoHeader);
                             until SalesCrMemoHeader.Next() = 0;
                         CurrPage.Update(false);
@@ -106,7 +111,7 @@ pageextension 70503 "EIE Posted Sales Credit Memos" extends "Posted Sales Credit
                         if Rec."GMAS SRI Document Type Code" <> '' then begin
                             ResponsibilityCenter.Get(Rec."Responsibility Center");
                             GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
-                            if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                            if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then
                                 EIEElectronicInvoicing.DownloadSalesCreditMemoDocument(Rec);
                             CurrPage.Update(false);
                         end;

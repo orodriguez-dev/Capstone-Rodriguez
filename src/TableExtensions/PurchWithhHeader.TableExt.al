@@ -1,3 +1,5 @@
+namespace GMAS.ELectronicInvoicing.Ecuador;
+
 /// <summary>
 /// TableExtension EIE Purch. Withh. Header (ID 70506) extends Record GMAS SRI Purch. Withh. Header.
 /// </summary>

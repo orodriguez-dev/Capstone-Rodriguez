@@ -1,3 +1,5 @@
+namespace GMAS.ELectronicInvoicing.Ecuador;
+
 /// <summary>
 /// GMAS - Codeunit EIE Web Service Request (ID 70500).
 /// </summary>

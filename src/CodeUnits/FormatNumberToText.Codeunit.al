@@ -1,3 +1,7 @@
+namespace GMAS.ELectronicInvoicing.Ecuador;
+
+using Microsoft.Finance.Currency;
+
 /// <summary>
 /// Codeunit EIE Format Number To Text (ID 70504).
 /// </summary>

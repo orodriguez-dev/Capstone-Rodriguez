@@ -1,3 +1,8 @@
+namespace GMAS.ELectronicInvoicing.Ecuador;
+
+using Microsoft.Inventory.Location;
+using Microsoft.Inventory.Transfer;
+
 /// <summary>
 /// PageExtension EIE Posted Transfer Shipments (ID 70507) extends Record Posted Transfer Shipments.
 /// </summary>
@@ -94,7 +99,7 @@ pageextension 70507 "EIE Posted Transfer Shipments" extends "Posted Transfer Shi
                         if Rec."GMAS SRI Document Type Code" <> '' then begin
                             ResponsibilityCenter.Get(Rec."GMAS SRI Responsibility Center");
                             GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
-                            if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                            if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then
                                 EIEElectronicInvoicing.DownloadTransferShipmenDocument(Rec);
                             CurrPage.Update(false);
                         end;

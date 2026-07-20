@@ -1,3 +1,5 @@
+namespace GMAS.ELectronicInvoicing.Ecuador;
+
 /// <summary>
 /// PageExtension EIE GMAS SRI Tabla 04 (ID 70513) extends Record GMAS SRI Tabla 04.
 /// </summary>

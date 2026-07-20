@@ -1,3 +1,8 @@
+namespace GMAS.ELectronicInvoicing.Ecuador;
+
+using Microsoft.Inventory.Location;
+using Microsoft.Purchases.History;
+
 /// <summary>
 /// PageExtension EIE Posted Purchase Invoices (ID 70509) extends Record Posted Purchase Invoices.
 /// </summary>
@@ -49,7 +54,7 @@ pageextension 70509 "EIE Posted Purchase Invoices" extends "Posted Purchase Invo
                             repeat
                                 ResponsibilityCenter.Get(PurchInvHeader."Responsibility Center");
                                 GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
-                                if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                                if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then
                                     if (PurchInvHeader."GMAS EI Electronic Doc. Status" <> Rec."GMAS EI Electronic Doc. Status"::Received) and (PurchInvHeader."GMAS EI Electronic Doc. Status" <> Rec."GMAS EI Electronic Doc. Status"::Sent) then
                                         EIEElectronicInvoicing.AuthorizePurchInvoiceDocument(PurchInvHeader);
                             until PurchInvHeader.Next() = 0;
@@ -79,7 +84,7 @@ pageextension 70509 "EIE Posted Purchase Invoices" extends "Posted Purchase Invo
                             repeat
                                 ResponsibilityCenter.Get(PurchInvHeader."Responsibility Center");
                                 GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
-                                if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                                if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then
                                     EIEElectronicInvoicing.StatusPurchInvoiceDocument(PurchInvHeader);
                             until PurchInvHeader.Next() = 0;
                         CurrPage.Update(false);
@@ -102,7 +107,7 @@ pageextension 70509 "EIE Posted Purchase Invoices" extends "Posted Purchase Invo
                         if Rec."GMAS SRI Document Type Code" = '03' then begin
                             ResponsibilityCenter.Get(Rec."Responsibility Center");
                             GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
-                            if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                            if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then
                                 EIEElectronicInvoicing.DownloadPurchInvoiceDocument(Rec);
                             CurrPage.Update(false);
                         end;

@@ -1,3 +1,7 @@
+namespace GMAS.ELectronicInvoicing.Ecuador;
+
+using Microsoft.Inventory.Location;
+
 /// <summary>
 /// PageExtension EIE Posted Purch. Withh. (ID 70511) extends Record GMAS SRI Posted Purch. Withh..
 /// </summary>
@@ -46,7 +50,7 @@ pageextension 70511 "EIE Posted Purch. Withh." extends "GMAS SRI Posted Purch. W
                             and (Rec."SRI Document Type Code" <> '') then begin
                             ResponsibilityCenter.Get(Rec."Responsibility Center");
                             GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
-                            if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                            if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then
                                 EIEElectronicInvoicing.AuthorizePurchWithholdingDocument(Rec);
                             CurrPage.Update(false);
                         end;
@@ -74,7 +78,7 @@ pageextension 70511 "EIE Posted Purch. Withh." extends "GMAS SRI Posted Purch. W
                             and (Rec."SRI Document Type Code" <> '') then begin
                             ResponsibilityCenter.Get(Rec."Responsibility Center");
                             GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
-                            if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                            if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then
                                 EIEElectronicInvoicing.StatusPurchWithholdingDocument(Rec);
                             CurrPage.Update(false);
                         end;
@@ -97,7 +101,7 @@ pageextension 70511 "EIE Posted Purch. Withh." extends "GMAS SRI Posted Purch. W
                         if Rec."SRI Document Type Code" <> '' then begin
                             ResponsibilityCenter.Get(Rec."Responsibility Center");
                             GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
-                            if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                            if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then
                                 EIEElectronicInvoicing.DownloadPurchWithholdingDocument(Rec);
                             CurrPage.Update(false);
                         end;

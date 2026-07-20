@@ -1,3 +1,7 @@
+namespace GMAS.ELectronicInvoicing.Ecuador;
+
+using Microsoft.Sales.History;
+
 /// <summary>
 /// TableExtension EIE Sales Cr.Memo Header (ID 70502) extends Record Sales Cr.Memo Header.
 /// </summary>

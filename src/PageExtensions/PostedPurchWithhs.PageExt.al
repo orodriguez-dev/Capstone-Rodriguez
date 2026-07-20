@@ -1,3 +1,7 @@
+namespace GMAS.ELectronicInvoicing.Ecuador;
+
+using Microsoft.Inventory.Location;
+
 /// <summary>
 /// PageExtension EIE Posted Purch. Withhs. (ID 70512) extends Record GMAS SRI Posted Purch. Withhs..
 /// </summary>
@@ -52,7 +56,7 @@ pageextension 70512 "EIE Posted Purch. Withhs." extends "GMAS SRI Posted Purch. 
                             repeat
                                 ResponsibilityCenter.Get(GMASSRIPurchWithhHeader."Responsibility Center");
                                 GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
-                                if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                                if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then
                                     if (GMASSRIPurchWithhHeader."EI Electronic Doc. Status" <> Rec."EI Electronic Doc. Status"::Received) and (GMASSRIPurchWithhHeader."EI Electronic Doc. Status" <> Rec."EI Electronic Doc. Status"::Sent) then
                                         EIEElectronicInvoicing.AuthorizePurchWithholdingDocument(GMASSRIPurchWithhHeader);
                             until GMASSRIPurchWithhHeader.Next() = 0;
@@ -85,7 +89,7 @@ pageextension 70512 "EIE Posted Purch. Withhs." extends "GMAS SRI Posted Purch. 
                             repeat
                                 ResponsibilityCenter.Get(GMASSRIPurchWithhHeader."Responsibility Center");
                                 GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
-                                if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                                if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then
                                     EIEElectronicInvoicing.StatusPurchWithholdingDocument(GMASSRIPurchWithhHeader);
                             until GMASSRIPurchWithhHeader.Next() = 0;
                         CurrPage.Update(false);
@@ -108,7 +112,7 @@ pageextension 70512 "EIE Posted Purch. Withhs." extends "GMAS SRI Posted Purch. 
                         if Rec."SRI Document Type Code" <> '' then begin
                             ResponsibilityCenter.Get(Rec."Responsibility Center");
                             GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
-                            if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                            if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then
                                 EIEElectronicInvoicing.DownloadPurchWithholdingDocument(Rec);
                             CurrPage.Update(false);
                         end;

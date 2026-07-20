@@ -1,26 +1,16 @@
+namespace GMAS.ELectronicInvoicing.Ecuador;
+
+using System.Utilities;
+
 /// <summary>
 /// GMAS - Codeunit EIE XML Document Structure (ID 70501).
 /// </summary>
 codeunit 70501 "EIE XML Document Structure"
 {
     trigger OnRun()
-    var
-    //TempBlob: Codeunit "Temp Blob";
-    //TxtEncoding: TextEncoding;
-    //FileOutStream: OutStream;
-    //FileInStream: InStream;
-    //FileName: Text;
     begin
-        //FileName := 'PruevaEstructuraXml.xml';
-        //TxtEncoding := TextEncoding::UTF8;
-
         XmlDoc := XmlDocument.Create();
         XmlDoc.Add(DocumentXmlElement);
-
-        //TempBlob.CreateOutStream(FileOutStream, TxtEncoding);
-        //XmlDoc.WriteTo(FileOutStream);
-        //TempBlob.CreateInStream(FileInStream, TxtEncoding);
-        //DownloadFromStream(FileInStream, '', '', '', FileName);
     end;
 
     var

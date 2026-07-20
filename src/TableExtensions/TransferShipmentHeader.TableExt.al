@@ -1,3 +1,7 @@
+namespace GMAS.ELectronicInvoicing.Ecuador;
+
+using Microsoft.Inventory.Transfer;
+
 /// <summary>
 /// TableExtension EIE Transfer Shipment Header (ID 70504) extends Record Transfer Shipment Header.
 /// </summary>

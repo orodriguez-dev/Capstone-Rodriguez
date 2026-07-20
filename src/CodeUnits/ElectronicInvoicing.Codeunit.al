@@ -1,3 +1,31 @@
+namespace GMAS.ELectronicInvoicing.Ecuador;
+
+using Microsoft.Bank.BankAccount;
+using Microsoft.CRM.Contact;
+using Microsoft.Finance.Currency;
+using Microsoft.Finance.GeneralLedger.Journal;
+using Microsoft.Finance.GeneralLedger.Setup;
+using Microsoft.Finance.SalesTax;
+using Microsoft.Finance.VAT.Ledger;
+using Microsoft.Foundation.Address;
+using Microsoft.Foundation.Company;
+using Microsoft.Foundation.PaymentTerms;
+using Microsoft.Foundation.Shipping;
+using Microsoft.Inventory.Comment;
+using Microsoft.Inventory.Item;
+using Microsoft.Inventory.Ledger;
+using Microsoft.Inventory.Location;
+using Microsoft.Inventory.Tracking;
+using Microsoft.Inventory.Transfer;
+using Microsoft.Purchases.Comment;
+using Microsoft.Purchases.Document;
+using Microsoft.Purchases.History;
+using Microsoft.Purchases.Vendor;
+using Microsoft.Sales.Comment;
+using Microsoft.Sales.Customer;
+using Microsoft.Sales.Document;
+using Microsoft.Sales.History;
+
 /// <summary>
 /// GMAS - Codeunit EIE Electronic Invoicing (ID 70502).
 /// </summary>
@@ -324,7 +352,7 @@ codeunit 70502 "EIE Electronic Invoicing"
                 TaxDetail.SetRange("Tax Jurisdiction Code", VATEntry."Tax Jurisdiction Code");
                 TaxDetail.SetFilter("Effective Date", '<=%1', VATEntry."Posting Date");
                 TaxDetail.SetRange("Tax Type", TaxDetail."Tax Type"::"Sales Tax");
-                TaxDetail.SetRange("GMAS SRI Tax Type", "GMAS SRI Tax Type"::VAT);
+                TaxDetail.SetRange("GMAS SRI Tax Type", Enum::"GMAS SRI Tax Type"::VAT);
                 if TaxDetail.FindLast() then begin
                     TaxDetail.TestField("GMAS EI Rate Tax Code");
                     TaxJurisdiction.Get(VATEntry."Tax Jurisdiction Code");
@@ -397,7 +425,7 @@ codeunit 70502 "EIE Electronic Invoicing"
                 EIEXMLDocumentStructure.SetTotalSinImpuestos(Format(SalesInvoiceLine.Amount, 0, AmountFormatLbl));
                 EIEXMLDocumentStructure.SetTotalDescuento(Format(SalesInvoiceLine."Line Discount Amount" + SalesInvoiceHeader."Invoice Discount Amount", 0, AmountFormatLbl));
 
-                if GMASSRITabla02."Transaction Type" = "GMAS SRI Transaction Type"::Export then begin
+                if GMASSRITabla02."Transaction Type" = Enum::"GMAS SRI Transaction Type"::Export then begin
                     EIEXMLDocumentStructure.SetComercioExterior(UpperCase(CompanyInformation."GMAS EI Foreign Trade"));
                     EIEXMLDocumentStructure.SetIncoTermFactura(Format(SalesInvoiceHeader."GMAS EI Icon Term Invoice"));
                     EIEXMLDocumentStructure.SetLugarIncoTerm(SalesInvoiceHeader."GMAS EI Place Incon Term");
@@ -496,7 +524,7 @@ codeunit 70502 "EIE Electronic Invoicing"
                                     TaxDetail.SetRange("Tax Group Code", SalesInvoiceLine."Tax Group Code");
                                     TaxDetail.SetFilter("Effective Date", '<=%1', SalesInvoiceLine."Posting Date");
                                     TaxDetail.SetRange("Tax Type", TaxDetail."Tax Type"::"Sales Tax");
-                                    TaxDetail.SetRange("GMAS SRI Tax Type", "GMAS SRI Tax Type"::VAT);
+                                    TaxDetail.SetRange("GMAS SRI Tax Type", Enum::"GMAS SRI Tax Type"::VAT);
                                     if TaxDetail.FindLast() then begin
                                         TaxDetail.TestField("GMAS EI Rate Tax Code");
                                         TaxJurisdiction.Get(TaxDetail."Tax Jurisdiction Code");
@@ -987,7 +1015,7 @@ codeunit 70502 "EIE Electronic Invoicing"
                 TaxDetail.SetRange("Tax Jurisdiction Code", VATEntry."Tax Jurisdiction Code");
                 TaxDetail.SetFilter("Effective Date", '<=%1', VATEntry."Posting Date");
                 TaxDetail.SetRange("Tax Type", TaxDetail."Tax Type"::"Sales Tax");
-                TaxDetail.SetRange("GMAS SRI Tax Type", "GMAS SRI Tax Type"::VAT);
+                TaxDetail.SetRange("GMAS SRI Tax Type", Enum::"GMAS SRI Tax Type"::VAT);
                 if TaxDetail.FindLast() then begin
                     TaxDetail.TestField("GMAS EI Rate Tax Code");
                     TaxJurisdiction.Get(VATEntry."Tax Jurisdiction Code");
@@ -1112,7 +1140,7 @@ codeunit 70502 "EIE Electronic Invoicing"
                                     TaxDetail.SetRange("Tax Group Code", SalesCrMemoLine."Tax Group Code");
                                     TaxDetail.SetFilter("Effective Date", '<=%1', SalesCrMemoLine."Posting Date");
                                     TaxDetail.SetRange("Tax Type", TaxDetail."Tax Type"::"Sales Tax");
-                                    TaxDetail.SetRange("GMAS SRI Tax Type", "GMAS SRI Tax Type"::VAT);
+                                    TaxDetail.SetRange("GMAS SRI Tax Type", Enum::"GMAS SRI Tax Type"::VAT);
                                     if TaxDetail.FindLast() then begin
                                         TaxDetail.TestField("GMAS EI Rate Tax Code");
                                         TaxJurisdiction.Get(TaxDetail."Tax Jurisdiction Code");
@@ -2054,7 +2082,7 @@ codeunit 70502 "EIE Electronic Invoicing"
         if VATEntry.FindSet() then
             repeat
                 TaxJurisdiction.Get(VATEntry."Tax Jurisdiction Code");
-                if TaxJurisdiction."GMAS SRI Tax Type" = "GMAS SRI Tax Type"::VAT then begin
+                if TaxJurisdiction."GMAS SRI Tax Type" = Enum::"GMAS SRI Tax Type"::VAT then begin
                     VATAmount += VATEntry.Amount;
                     VATBase += VATEntry.Base;
                 end;
@@ -2173,7 +2201,7 @@ codeunit 70502 "EIE Electronic Invoicing"
                             TaxDetail.SetRange("Tax Group Code", VATEntry."Tax Group Code");
                             TaxDetail.SetFilter("Effective Date", '<=%1', VATEntry."Posting Date");
                             TaxDetail.SetRange("Tax Type", TaxDetail."Tax Type"::"Sales Tax");
-                            TaxDetail.SetRange("GMAS SRI Tax Type", "GMAS SRI Tax Type"::VAT);
+                            TaxDetail.SetRange("GMAS SRI Tax Type", Enum::"GMAS SRI Tax Type"::VAT);
                             if TaxDetail.FindLast() then begin
                                 TaxDetail.TestField("GMAS EI Rate Tax Code");
                                 TaxJurisdiction.Get(VATEntry."Tax Jurisdiction Code");
@@ -2205,7 +2233,7 @@ codeunit 70502 "EIE Electronic Invoicing"
                             TaxDetail.SetRange("Tax Group Code", PurchInvLine."Tax Group Code");
                             TaxDetail.SetFilter("Effective Date", '<=%1', PurchInvLine."Posting Date");
                             TaxDetail.SetRange("Tax Type", TaxDetail."Tax Type"::"Sales Tax");
-                            TaxDetail.SetRange("GMAS SRI Tax Type", "GMAS SRI Tax Type"::VAT);
+                            TaxDetail.SetRange("GMAS SRI Tax Type", Enum::"GMAS SRI Tax Type"::VAT);
                             if TaxDetail.FindLast() then begin
                                 TaxDetail.TestField("GMAS EI Rate Tax Code");
                                 TaxJurisdiction.Get(TaxDetail."Tax Jurisdiction Code");
@@ -2643,14 +2671,14 @@ codeunit 70502 "EIE Electronic Invoicing"
         if VATEntry.FindSet() then
             repeat
                 TaxJurisdiction.Get(VATEntry."Tax Jurisdiction Code");
-                if TaxJurisdiction."GMAS SRI Tax Type" = "GMAS SRI Tax Type"::VAT then begin
+                if TaxJurisdiction."GMAS SRI Tax Type" = Enum::"GMAS SRI Tax Type"::VAT then begin
 
                     TaxDetail.Reset();
                     TaxDetail.SetRange("Tax Jurisdiction Code", VATEntry."Tax Jurisdiction Code");
                     TaxDetail.SetFilter("Tax Group Code", '%1', VATEntry."Tax Group Code");
                     TaxDetail.SetFilter("Effective Date", '<=%1', VATEntry."Posting Date");
                     TaxDetail.SetRange("Tax Type", VATEntry."Tax Type");
-                    TaxDetail.SetRange("GMAS SRI Tax Type", "GMAS SRI Tax Type"::VAT);
+                    TaxDetail.SetRange("GMAS SRI Tax Type", Enum::"GMAS SRI Tax Type"::VAT);
                     if TaxDetail.FindLast() then begin
                         TaxDetail.TestField("GMAS EI Rate Tax Code");
                         TaxJurisdiction.Get(TaxDetail."Tax Jurisdiction Code");

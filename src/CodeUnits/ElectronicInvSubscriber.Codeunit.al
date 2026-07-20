@@ -1,3 +1,14 @@
+namespace GMAS.ELectronicInvoicing.Ecuador;
+
+using Microsoft.Finance.GeneralLedger.Posting;
+using Microsoft.Purchases.Document;
+using Microsoft.Purchases.History;
+using Microsoft.Purchases.Posting;
+using Microsoft.Sales.Document;
+using Microsoft.Sales.History;
+using Microsoft.Sales.Posting;
+using Microsoft.Sales.Receivables;
+
 /// <summary>
 /// Codeunit EIE Electronic Inv. Subscriber (ID 70503).
 /// </summary>
@@ -21,7 +32,7 @@ codeunit 70503 "EIE Electronic Inv. Subscriber"
                 if SalesInvoiceHeader."GMAS SRI Document Type Code" <> '' then begin
                     GMASSRITabla04.Get(SalesInvoiceHeader."GMAS SRI Document Type Code");
                     if GMASSRITabla04."EIE Automatic Electronic Inv." and GMASSRITabla20.Get(SalesInvoiceHeader."GMAS SRI Emission Type Code") then
-                        if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then begin
+                        if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then begin
                             SalesInvoiceHeader.CalcFields("Amount Including VAT");
                             GMASSRITabla02.Get(SalesInvoiceHeader."GMAS SRI Ident. Type Code");
                             if (GMASSRITabla02."EI Maximum Amount" = 0) or
@@ -37,7 +48,7 @@ codeunit 70503 "EIE Electronic Inv. Subscriber"
                 if SalesCrMemoHeader."GMAS SRI Document Type Code" <> '' then begin
                     GMASSRITabla04.Get(SalesCrMemoHeader."GMAS SRI Document Type Code");
                     if GMASSRITabla04."EIE Automatic Electronic Inv." and GMASSRITabla20.Get(SalesCrMemoHeader."GMAS SRI Emission Type Code") then
-                        if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then begin
+                        if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then begin
                             EIEElectronicInvoicing.AuthorizeSalesCreditMemoDocument(SalesCrMemoHeader);
                             Commit();
                         end;
@@ -48,7 +59,7 @@ codeunit 70503 "EIE Electronic Inv. Subscriber"
                 if SalesShipmentHeader."GMAS SRI Document Type Code" <> '' then begin
                     GMASSRITabla04.Get(SalesShipmentHeader."GMAS SRI Document Type Code");
                     if GMASSRITabla04."EIE Automatic Electronic Inv." and GMASSRITabla20.Get(SalesShipmentHeader."GMAS SRI Emission Type Code") then
-                        if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then begin
+                        if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then begin
                             EIEElectronicInvoicing.AuthorizeSalesShipmentDocument(SalesShipmentHeader);
                             Commit();
                         end;
@@ -74,14 +85,14 @@ codeunit 70503 "EIE Electronic Inv. Subscriber"
             if GMASSRIPurchWithhHeader.Get(PurchInvHeader."GMAS SRI Withholding No.") then begin
                 GMASSRITabla04.Get(GMASSRIPurchWithhHeader."SRI Document Type Code");
                 if GMASSRITabla04."EIE Automatic Electronic Inv." and GMASSRITabla20.Get(GMASSRIPurchWithhHeader."SRI Emission Type Code") then
-                    if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                    if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then
                         EIEElectronicInvoicing.AuthorizePurchWithholdingDocument(GMASSRIPurchWithhHeader);
             end;
 
             if PurchInvHeader."GMAS SRI Document Type Code" = '03' then begin
                 GMASSRITabla04.Get(PurchInvHeader."GMAS SRI Document Type Code");
                 if GMASSRITabla04."EIE Automatic Electronic Inv." and GMASSRITabla20.Get(PurchInvHeader."GMAS SRI Emission Type Code") then
-                    if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                    if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then
                         EIEElectronicInvoicing.AuthorizePurchInvoiceDocument(PurchInvHeader);
             end;
         end;

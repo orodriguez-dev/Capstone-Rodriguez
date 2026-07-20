@@ -1,3 +1,8 @@
+namespace GMAS.ELectronicInvoicing.Ecuador;
+
+using Microsoft.Inventory.Location;
+using Microsoft.Sales.History;
+
 /// <summary>
 /// PageExtension EIE Posted Sales Cr. Memo (ID 70504) extends Record Posted Sales Credit Memo.
 /// </summary>
@@ -43,7 +48,7 @@ pageextension 70504 "EIE Posted Sales Cr. Memo" extends "Posted Sales Credit Mem
                            and (Rec."GMAS SRI Document Type Code" <> '') then begin
                             ResponsibilityCenter.Get(Rec."Responsibility Center");
                             GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
-                            if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                            if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then
                                 EIEElectronicInvoicing.AuthorizeSalesCreditMemoDocument(Rec);
                             CurrPage.Update(false);
                         end;
@@ -69,7 +74,7 @@ pageextension 70504 "EIE Posted Sales Cr. Memo" extends "Posted Sales Credit Mem
                             and (Rec."GMAS SRI Document Type Code" <> '') then begin
                             ResponsibilityCenter.Get(Rec."Responsibility Center");
                             GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
-                            if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                            if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then
                                 EIEElectronicInvoicing.StatusSalesCreditMemoDocument(Rec);
                             CurrPage.Update(false);
                         end;
@@ -92,7 +97,7 @@ pageextension 70504 "EIE Posted Sales Cr. Memo" extends "Posted Sales Credit Mem
                         if Rec."GMAS SRI Document Type Code" <> '' then begin
                             ResponsibilityCenter.Get(Rec."Responsibility Center");
                             GMASSRITabla20.Get(ResponsibilityCenter."GMAS SRI Emission Type Code");
-                            if GMASSRITabla20."Emission Type" = "GMAS SRI Emission Type"::"Electronic Invoicing" then
+                            if GMASSRITabla20."Emission Type" = Enum::"GMAS SRI Emission Type"::"Electronic Invoicing" then
                                 EIEElectronicInvoicing.DownloadSalesCreditMemoDocument(Rec);
                             CurrPage.Update(false);
                         end;
